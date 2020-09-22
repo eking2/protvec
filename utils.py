@@ -1,7 +1,5 @@
 import numpy as np
 from pathlib import Path
-from collections import Counter
-from tqdm.auto import tqdm
 
 AA = 'ACDEFGHIKLMNPQRSTVWY'
 
@@ -46,7 +44,7 @@ def gen_corpus(fn, k):
     lines = Path(fn).read_text().splitlines()
 
     corpus = []
-    for line in tqdm(lines):
+    for line in lines:
         # sequence lines capitalized, comments lower
         if line[0].isupper():
             kmers = seq_to_kmers(line)
