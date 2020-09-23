@@ -1,5 +1,6 @@
 import numpy as np
 from pathlib import Path
+from tqdm.auto import tqdm
 
 AA = 'ACDEFGHIKLMNPQRSTVWY'
 
@@ -44,7 +45,7 @@ def gen_corpus(fn, k):
     lines = Path(fn).read_text().splitlines()
 
     corpus = []
-    for line in lines:
+    for line in tqdm(lines):
         # sequence lines capitalized, comments lower
         if line[0].isupper():
             kmers = seq_to_kmers(line)

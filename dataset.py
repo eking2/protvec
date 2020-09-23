@@ -4,6 +4,9 @@ import numpy as np
 from collections import Counter
 import itertools
 from utils import seq_to_kmers, gen_corpus
+from tqdm.auto import tqdm
+import json
+from pathlib import Path
 
 def pad_seqs(batch):
 
@@ -16,18 +19,20 @@ def pad_seqs(batch):
     # pad contexts_negative
     max_len = max([len(c_n) for c_n in contexts_negatives])
     samples = len(centers)
-    c_n_padded = np.zeros((samples, max_len))
-    labels_padded = np.zeros((samples, max_len))
 
     # mask with padded
+    c_n_padded = np.zeros((samples, max_len))
+    labels_padded = np.zeros((samples, max_len))
     mask = np.zeros((samples, max_len))
 
+    # fill in data
     for i, c_n in enumerate(contexts_negatives):
         seq_len = len(c_n)
         c_n_padded[i, :seq_len] = c_n
         mask[i, :seq_len] = 1
         labels_padded[i, :seq_len] = labels[i]
 
+    # np array to tensors
     centers = torch.tensor(np.stack(centers, axis=0)).unsqueeze(1)
     c_n_padded = torch.tensor(c_n_padded).long()
     labels_padded = torch.tensor(labels_padded)
@@ -36,21 +41,19 @@ def pad_seqs(batch):
     return centers, c_n_padded, labels_padded, mask
 
 
-class Vocab(Dataset):
+# too large to store in memory
+# preprocess vocab and store to text files
+# then get samples by byte index
+class PreprocessVocab:
 
     def __init__(self, fn, k=3, min_freq=0, window=5, neg_samples=5, subsample_thresh=1e-4):
 
+        self.fn = fn
+        self.k = k
         self.min_freq = min_freq
         self.window = window
         self.neg_samples = neg_samples
         self.subsample_thresh = subsample_thresh
-
-        self.raw_corpus = gen_corpus(fn, k)  # word tokens
-        self.word2idx, self.idx2word = self.corpus_to_mappings()
-        self.corpus = self.label_encode()  # numerical
-        self.subsampled = self.subsample_corpus()
-        self.centers, self.contexts = self.get_center_and_contexts()
-        self.negative_samples = self.get_negative_samples()
 
 
     def corpus_to_mappings(self):
@@ -64,9 +67,15 @@ class Vocab(Dataset):
         sorted_vocab = sorted(counter, key=counter.get, reverse=True)
 
         # drop if count lower than min freq
-        word2idx = {word : i for i, word in enumerate(sorted_vocab, 1) if counter[word] >= self.min_freq}
+        word2idx = {word : i for i, word in enumerate(tqdm(sorted_vocab), 1) if counter[word] >= self.min_freq}
         word2idx['<unk>'] = 0
         idx2word = {i : word for word, i in word2idx.items()}
+
+        with open('preprocessed/word2idx.json', 'w') as w2i:
+            json.dump(word2idx, w2i, indent=2)
+
+        with open('preprocessed/idx2word.json', 'w') as i2w:
+            json.dump(idx2word, i2w, indent=2)
 
         return word2idx, idx2word
 
@@ -76,8 +85,13 @@ class Vocab(Dataset):
         '''convert from amino acid k-mers to numerical'''
 
         labeled = []
-        for seqs in self.raw_corpus:
+        for seqs in tqdm(self.raw_corpus):
             labeled.append([self.word2idx.get(aa, self.word2idx['<unk>']) for aa in seqs])
+
+        with open('preprocessed/labeled.txt', 'w') as l:
+            for line in labeled:
+                l.write(' '.join(map(str, line)))
+                l.write('\n')
 
         return labeled
 
@@ -94,7 +108,12 @@ class Vocab(Dataset):
         freqs = {word : count/total for word, count in counter.items()}
         prob_drop = {word : 1 - np.sqrt(self.subsample_thresh / freq) for word, freq in freqs.items()}
 
-        subsampled = [[word for word in seq if np.random.uniform(0, 1) > prob_drop[word]] for seq in self.corpus]
+        subsampled = [[word for word in seq if np.random.uniform(0, 1) > prob_drop[word]] for seq in tqdm(self.corpus)]
+
+        with open('preprocessed/subsampled.txt', 'w') as s:
+            for line in subsampled:
+                s.write(' '.join(map(str, line)))
+                s.write('\n')
 
         return subsampled
 
@@ -106,7 +125,7 @@ class Vocab(Dataset):
         centers = []
         contexts = []
 
-        for seq in self.subsampled:
+        for seq in tqdm(self.subsampled):
             # each token in seq will be a center
             centers.extend(seq)
             for i in range(len(seq)):
@@ -124,6 +143,14 @@ class Vocab(Dataset):
                 # save all context words
                 contexts.append([seq[idx] for idx in indices])
 
+        with open('preprocessed/centers.txt', 'w') as ce, open('preprocessed/contexts.txt', 'w') as co:
+            for center, context in zip(centers, contexts):
+                ce.write(str(center))
+                ce.write('\n')
+
+                co.write(' '.join(map(str, context)))
+                co.write('\n')
+
         return centers, contexts
 
 
@@ -137,7 +164,7 @@ class Vocab(Dataset):
         prob = weights / np.sum(weights)
 
         negatives = []
-        for i, center in enumerate(self.centers):
+        for i, center in enumerate(tqdm(self.centers)):
             samples = []
             while len(samples) < self.neg_samples:
                 neg = np.random.choice(list(subsampled_counter.keys()), size=1, p=prob)
@@ -148,34 +175,132 @@ class Vocab(Dataset):
 
             negatives.append(samples)
 
+        with open('preprocessed/negatives.txt', 'w') as n:
+            for line in negatives:
+                n.write(' '.join(map(str, line)))
+                n.write('\n')
+
         return negatives
+
+
+    def run_all(self):
+
+        print('tokenizing')
+        self.raw_corpus = gen_corpus(self.fn, self.k)  # word tokens
+        with open('preprocessed/corpus.txt', 'w') as c:
+            for seq in self.raw_corpus:
+                c.write(' '.join(seq))
+                c.write('\n')
+
+        print('mapping vocab')
+        self.word2idx, self.idx2word = self.corpus_to_mappings()
+
+        print('numericalizing')
+        self.corpus = self.label_encode()  # numerical
+
+        print('subsampling')
+        self.subsampled = self.subsample_corpus()
+
+        print('generating positive pairs')
+        self.centers, self.contexts = self.get_center_and_contexts()
+
+        print('generating negative samples')
+        self.negative_samples = self.get_negative_samples()
+
+
+    # def __len__(self):
+
+    #     '''number of center words, each will be paired to positive and negative samples'''
+
+    #     return len(self.centers)
+
+    # def __getitem__(self, idx):
+
+    #     '''return centers, contexts+negatives, labels (positive or negative pair)'''
+
+    #     # pad/mask after batching with collate_fn, random batching will result in different sized contexts_negatives
+
+    #     contexts = self.contexts[idx]
+    #     negatives = self.negative_samples[idx]
+
+    #     contexts_negatives = np.array([contexts + negatives]).squeeze(0)
+    #     labels = np.concatenate([np.ones(len(contexts)), np.zeros(len(negatives))])
+
+    #     return np.array(self.centers[idx]), contexts_negatives, labels
+
+
+class ProtVecVocab(Dataset):
+
+    def __init__(self):
+
+        self.word2idx = json.loads(Path('preprocessed/word2idx.json').read_bytes())
+        self.idx2word = json.loads(Path('preprocessed/idx2word.json').read_bytes())
+        self.centers_path = 'preprocessed/centers.txt'
+        self.contexts_path = 'preprocessed/contexts.txt'
+        self.negatives_path = 'preprocessed/negatives.txt'
+
+        # dictionary with byte offsets for each line
+        self.centers_offsets = self.get_offsets(self.centers_path)
+        self.contexts_offsets = self.get_offsets(self.contexts_path)
+        self.negative_offsets = self.get_offsets(self.negatives_path)
+
+
+    def get_offsets(self, fn):
+
+        # key = line, value = byte
+        offsets = {}
+        line_count = 0
+        with open(fn, 'rb') as f:
+            # tell gets end of line, need to get offset before loop for first value
+            start = f.tell()
+            offsets[line_count] = start
+            while f.readline():
+                line_count += 1
+                offset = f.tell()
+                offsets[line_count] = offset
+
+        # discard last offset, blank space at end
+        del offsets[line_count]
+
+        return offsets
+
 
     def __len__(self):
 
-        '''number of center words, each will be paired to positive and negative samples'''
-
-        return len(self.centers)
+        return len(self.centers_offsets)
 
     def __getitem__(self, idx):
 
-        '''return centers, contexts+negatives, labels (positive or negative pair)'''
+        center_idx = self.centers_offsets[idx]
+        context_idx = self.contexts_offsets[idx]
+        negative_idx = self.negative_offsets[idx]
 
-        # pad/mask after batching with collate_fn, random batching will result in different sized contexts_negatives
+        with open(self.centers_path, 'r') as ce, open(self.contexts_path, 'r') as co, open(self.negatives_path, 'r') as n:
+            ce.seek(center_idx)
+            co.seek(context_idx)
+            n.seek(negative_idx)
 
-        contexts = self.contexts[idx]
-        negatives = self.negative_samples[idx]
+            centers = ce.readline().strip()
+            contexts = co.readline().split()
+            negatives = n.readline().split()
 
-        contexts_negatives = np.array([contexts + negatives]).squeeze(0)
-        labels = np.concatenate([np.ones(len(contexts)), np.zeros(len(negatives))])
+        # to numpy array and reshape
+        centers = np.array(centers, dtype=np.int)
 
-        return np.array(self.centers[idx]), contexts_negatives, labels
+        # combine contexts (positives) and negatives into single vector, labels is classifier pos or neg
+        # must pad contexts_negatives, will have different lengths due to random sample in each batch
+        contexts_negatives = np.array([contexts + negatives], dtype=np.int).squeeze(0)
+        labels = np.concatenate([np.ones(len(contexts)), np.zeros(len(negatives))]).astype(np.int)
 
+        return centers, contexts_negatives, labels
 
-
-#test = Vocab('./inputs/test_seq.txt')
-#print(test[0])
-#print(test.contexts)
-#print(test.centers)
+#test = ProtVecVocab()
+#print(test[4])
+# offsets = test.centers_offsets
+# with open('preprocessed/centers.txt', 'r') as f:
+#     f.seek(offsets[163])
+#     line = f.readline()
+#     print(line)
+# print(offsets)
+# print(len(offsets))
 #print(len(test))
-#print(len(test.contexts))
-
