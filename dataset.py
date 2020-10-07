@@ -7,6 +7,7 @@ from utils import seq_to_kmers, gen_corpus
 from tqdm.auto import tqdm
 import json
 from pathlib import Path
+from joblib import Parallel, delayed
 
 def pad_seqs(batch):
 
@@ -153,6 +154,17 @@ class PreprocessVocab:
 
         return centers, contexts
 
+    def get_negative_sample(self, i, center, neg_samples, subsampled_counter, prob, contexts):
+
+        samples = []
+        while len(samples) < neg_samples:
+            neg = np.random.choice(list(subsampled_counter.keys()), size=1, p=prob)
+
+            # neg is not in contexts and not center
+            if neg not in contexts[i] and neg != center:
+                samples.append(neg.item())
+
+        return np.array(samples, dtype=np.int32)
 
     def get_negative_samples(self):
 
@@ -163,22 +175,14 @@ class PreprocessVocab:
         weights = np.array([count**0.75 for word, count in subsampled_counter.items()])
         prob = weights / np.sum(weights)
 
-        negatives = []
-        for i, center in enumerate(tqdm(self.centers)):
-            samples = []
-            while len(samples) < self.neg_samples:
-                neg = np.random.choice(list(subsampled_counter.keys()), size=1, p=prob)
+        #negatives = Parallel(n_jobs=-1, backend='loky')(delayed(self.get_negative_sample)(i, center, self.neg_samples, subsampled_counter, prob, self.contexts) for i, center in enumerate(tqdm(self.centers)))
+        negatives = np.stack([self.get_negative_sample(i, center, self.neg_samples, subsampled_counter, prob, self.contexts) for i, center in enumerate(tqdm(self.centers))])
+        np.savetxt('preprocessed/negatives.txt', negatives, fmt='%i')
 
-                # neg is not in contexts and not center
-                if neg not in self.contexts[i] and neg != center:
-                    samples.append(neg.item())
-
-            negatives.append(samples)
-
-        with open('preprocessed/negatives.txt', 'w') as n:
-            for line in negatives:
-                n.write(' '.join(map(str, line)))
-                n.write('\n')
+        # with open('preprocessed/negatives.txt', 'w') as n:
+        #     for line in negatives:
+        #         n.write(' '.join(map(str, line)))
+        #         n.write('\n')
 
         return negatives
 
