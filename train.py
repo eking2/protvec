@@ -4,6 +4,7 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 from dataset import PreprocessVocab, ProtVecVocab, pad_seqs
 from model import skip_gram
+from tqdm.auto import tqdm
 import time
 import argparse
 
@@ -12,14 +13,25 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('-c', '--corpus', type=str, 
                         help='Path to corpus file containing amino acid sequences')
+    parser.add_argument('-m', '--min', type=int, default=3,
+                        help='Minimum frequency for kmer (default: 3)')
+    parser.add_argument('-n', '--context', type=int, default=5,
+                        help='Context size (default: 5)')
+    parser.add_argument('-k', '--ngram', type=int, default=3,
+                        help='Ngram size (default: 3')
+    parser.add_argument('-g', '--neg', type=int, default=5,
+                        help='Number of negative samples (default: 5)')
     parser.add_argument('-b', '--batch', type=int, default=128,
                         help='Batch size (default: 128')
+
     parser.add_argument('-e', '--embed', type=int, default=300,
                         help='Embedding dimension size (default: 300')
     parser.add_argument('-l', '--lr', type=float, default=0.003,
                         help='Learning rate (default: 0.003')
     parser.add_argument('-p', '--epochs', type=int, default=5,
                         help='Epochs (default: 5)')
+    parser.add_argument('-o', '--output', type=str, default='outputs/embeds.txt',
+                        help='Embedding vectors output filename')
     
     return parser.parse_args()
 
@@ -37,10 +49,13 @@ def train(model, loader, optimizer):
         masks = masks.to(device)
 
         # every batch needs a new criterion, different padding
-        criterion = nn.BCEWithLogitsLoss(weight=masks)
+        criterion = nn.BCEWithLogitsLoss(weight=masks, reduction='none')
 
         pred = model(centers, contexts_negatives)
         loss = criterion(pred.view_as(labels), labels.float())
+
+        # normalize due to different length
+        loss = (loss.mean(dim=1) / masks.sum(dim=1) * masks.shape[1]).mean()
 
         optimizer.zero_grad()
         loss.backward()
@@ -63,7 +78,7 @@ def save_embeds(model, dataset, embed_size, filename):
             word_idx = torch.tensor(int(word_idx)).to(device).long()
             embed = model.in_emb(word_idx)
 
-            # to list to save  
+            # write out word embedding values
             embed = ' '.join(map(str, embed.tolist()))
             fo.write(f'{word} {embed}\n')
 
@@ -76,7 +91,8 @@ if __name__ == '__main__':
 
     # full uniprot dataset takes ~1hr
     if args.corpus:
-        PreprocessVocab(args.corpus).run_all()
+        PreprocessVocab(args.corpus, k=args.ngram, min_freq=args.min_freq, window=args.context,
+                        neg_samples=args.neg).run_all()
 
     dataset = ProtVecVocab()
     loader = DataLoader(dataset, batch_size=args.batch, shuffle=True, collate_fn=pad_seqs)
@@ -96,11 +112,11 @@ if __name__ == '__main__':
     model = skip_gram(vocab_size, args.embed).to(device)
     optimizer = optim.Adam(model.parameters(), lr=args.lr)
 
-    # losses = []
-    # for epoch in range(args.epochs):
+    losses = []
+    for epoch in tqdm(range(args.epochs)):
 
-    #     loss = train(model, loader, optimizer)
-    #     losses.append(loss)
+        loss = train(model, loader, optimizer)
+        losses.append(loss)
 
-    # print(losses)
-    save_embeds(model, dataset, args.embed, 'embeds.txt')
+    print(losses)
+    #save_embeds(model, dataset, args.embed, args.output)
