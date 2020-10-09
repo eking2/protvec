@@ -1,9 +1,11 @@
+from pathlib import Path
 import requests 
 import pandas as pd
 import numpy as np
 from bs4 import BeautifulSoup
-import re
-
+import json
+from tqdm.auto import tqdm
+tqdm.pandas()
 
 def get_code():
     
@@ -81,11 +83,12 @@ def get_pi():
     del res[-1]
     
     df = pd.DataFrame(res, columns=['aa', 'pka_1', 'pka_2', 'pka_3', 'pI'])
+    df['aa'] = df['aa'].apply(lambda x: x.title())  # capitalize Acid in aspartic/glutamic acid to merge later
 
     # pI saving invisible chars
     # keep only numeric
     # pat = re.compile(r'\d+\.\d+')
-    # df['pI'] = df['pI'].apply(lambda x: pat.match(x))
+    # df['pI'] = df['pI'].apply(lambda x: pat.match(x).group(0))
             
     return df
 
@@ -218,13 +221,42 @@ def combine():
     df = df.merge(pi, left_on='name', right_on='aa')
 
     df = df[['aa_1', 'mass_x', 'volume', 'vdw_vol', 'polarity', 'hydrophobicity', 'pI']]
-    df = df.rename({'mass_x' : 'mass'})
+    df = df.rename(columns={'mass_x' : 'mass'})
 
     df = df.apply(pd.to_numeric, errors='ignore')
     df.to_csv('inputs/aa_props.csv', index=False)
 
 
+def calc_props():
+
+    def kmer_prop(kmer, aa2idx, prop):
+
+        res = 0
+        for aa in kmer:
+            idx = aa2idx.query("aa_1 == @aa").index.values[0]
+            res += prop.values[idx]
+
+        return res
+
+    kmers_dict = json.loads(Path('./preprocessed/word2idx.json').read_bytes())
+    kmers = list(kmers_dict.keys())[:-1]  # ignore <unk>
+    df = pd.DataFrame({'kmer' : kmers})
+    df = df.sample(100)
+
+    aa_props = pd.read_csv('inputs/aa_props.csv')
+    aa2idx = aa_props[['aa_1']]
+
+    df['mass'] = df['kmer'].progress_apply(lambda x: kmer_prop(x, aa2idx, aa_props['mass']))
+    df['charge'] = df['kmer'].progress_apply(lambda x: kmer_prop(x, aa2idx, aa_props['pI']))  # paper used pI for charge
+    df['vol'] = df['kmer'].progress_apply(lambda x: kmer_prop(x, aa2idx, aa_props['volume']))
+    df['vdw_vol'] = df['kmer'].progress_apply(lambda x: kmer_prop(x, aa2idx, aa_props['vdw_vol']))
+    df['hydrophobicity'] = df['kmer'].progress_apply(lambda x: kmer_prop(x, aa2idx, aa_props['hydrophobicity']))
+    df['polarity'] = df['kmer'].progress_apply(lambda x: kmer_prop(x, aa2idx, aa_props['polarity']))
+
+    df.to_csv('inputs/kmers_props_calc.csv', index=False)
+
 if __name__ == '__main__':
 
-    combine()
-
+    #combine()
+    #calc_props()
+    pass
