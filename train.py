@@ -15,8 +15,8 @@ def parse_args():
                         help='Path to corpus file containing amino acid sequences')
     parser.add_argument('-m', '--min', type=int, default=3,
                         help='Minimum frequency for kmer (default: 3)')
-    parser.add_argument('-n', '--context', type=int, default=5,
-                        help='Context size (default: 5)')
+    parser.add_argument('-n', '--context', type=int, default=25,
+                        help='Context size (default: 25)')
     parser.add_argument('-k', '--ngram', type=int, default=3,
                         help='Ngram size (default: 3')
     parser.add_argument('-g', '--neg', type=int, default=5,
@@ -24,8 +24,10 @@ def parse_args():
     parser.add_argument('-b', '--batch', type=int, default=128,
                         help='Batch size (default: 128')
 
-    parser.add_argument('-e', '--embed', type=int, default=300,
-                        help='Embedding dimension size (default: 300')
+    parser.add_argument('-t', '--train', action='store_true',
+                        help='Train model')
+    parser.add_argument('-e', '--embed', type=int, default=100,
+                        help='Embedding dimension size (default: 100')
     parser.add_argument('-l', '--lr', type=float, default=0.003,
                         help='Learning rate (default: 0.003')
     parser.add_argument('-p', '--epochs', type=int, default=5,
@@ -91,32 +93,37 @@ if __name__ == '__main__':
 
     # full uniprot dataset takes ~1hr
     if args.corpus:
-        PreprocessVocab(args.corpus, k=args.ngram, min_freq=args.min_freq, window=args.context,
+        PreprocessVocab(args.corpus, k=args.ngram, min_freq=args.min, window=args.context,
                         neg_samples=args.neg).run_all()
 
-    dataset = ProtVecVocab()
-    loader = DataLoader(dataset, batch_size=args.batch, shuffle=True, collate_fn=pad_seqs)
+    if args.train:
 
-    # centers, contexts_negatives, labels, mask = next(iter(loader))
-    vocab_size = len(dataset.word2idx)
+        dataset = ProtVecVocab()
+        loader = DataLoader(dataset, batch_size=args.batch, shuffle=True, collate_fn=pad_seqs)
 
-    # print('centers')
-    # print(centers.shape)
-    # print('contexts_negatives')
-    # print(contexts_negatives.shape)
-    # print('labels')
-    # print(labels.shape)
-    # print('mask')
-    # print(mask.shape)
-    
-    model = skip_gram(vocab_size, args.embed).to(device)
-    optimizer = optim.Adam(model.parameters(), lr=args.lr)
+        # centers, contexts_negatives, labels, mask = next(iter(loader))
+        vocab_size = len(dataset.word2idx)
 
-    losses = []
-    for epoch in tqdm(range(args.epochs)):
+        # print('centers')
+        # print(centers.shape)
+        # print('contexts_negatives')
+        # print(contexts_negatives.shape)
+        # print('labels')
+        # print(labels.shape)
+        # print('mask')
+        # print(mask.shape)
+        
+        model = skip_gram(vocab_size, args.embed).to(device)
+        optimizer = optim.Adam(model.parameters(), lr=args.lr)
 
-        loss = train(model, loader, optimizer)
-        losses.append(loss)
+        loss = 0
+        pbar = tqdm(range(args.epochs))
+        for epoch in pbar:
 
-    print(losses)
-    #save_embeds(model, dataset, args.embed, args.output)
+            pbar.set_postfix({'Epoch' : epoch,
+                              'Loss' : loss})
+
+            loss = train(model, loader, optimizer)
+            #print(f'Epoch: {epoch+1:3} | Loss: {loss:.2f}')
+
+        save_embeds(model, dataset, args.embed, args.output)

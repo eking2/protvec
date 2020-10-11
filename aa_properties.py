@@ -4,8 +4,21 @@ import pandas as pd
 import numpy as np
 from bs4 import BeautifulSoup
 import json
+import argparse
 from tqdm.auto import tqdm
 tqdm.pandas()
+
+
+def parse_args():
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-d', '--download', action='store_true',
+                        help='Download single amino acid reference properties')
+    parser.add_argument('-p', '--props', action='store_true',
+                        help='Calculate kmer properties as sum of individual amino acids')
+
+    return parser.parse_args()
+
 
 def get_code():
     
@@ -257,6 +270,10 @@ def calc_props():
 
 if __name__ == '__main__':
 
-    #combine()
-    #calc_props()
-    pass
+    args = parse_args()
+
+    if args.download:
+        combine()
+
+    if args.props:
+        calc_props()

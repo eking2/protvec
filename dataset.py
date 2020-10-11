@@ -105,11 +105,14 @@ class PreprocessVocab:
 
         # flatten
         counter = Counter(list(itertools.chain.from_iterable(self.corpus)))
-        total = len(counter)
+
+        # self.corpus is list of lists, want length of all elements in total
+        total = len(sum(self.corpus, []))
         freqs = {word : count/total for word, count in counter.items()}
         prob_drop = {word : 1 - np.sqrt(self.subsample_thresh / freq) for word, freq in freqs.items()}
 
-        subsampled = [[word for word in seq if np.random.uniform(0, 1) > prob_drop[word]] for seq in tqdm(self.corpus)]
+        # deal with negative probabilities from extremely rare kmers
+        subsampled = [[word for word in seq if np.random.uniform(0, 1) < (1 - prob_drop[word])] for seq in tqdm(self.corpus)]
 
         with open('preprocessed/subsampled.txt', 'w') as s:
             for line in subsampled:
@@ -298,13 +301,3 @@ class ProtVecVocab(Dataset):
 
         return centers, contexts_negatives, labels
 
-#test = ProtVecVocab()
-#print(test[4])
-# offsets = test.centers_offsets
-# with open('preprocessed/centers.txt', 'r') as f:
-#     f.seek(offsets[163])
-#     line = f.readline()
-#     print(line)
-# print(offsets)
-# print(len(offsets))
-#print(len(test))
