@@ -1,6 +1,7 @@
 import torch
 from torch.utils.data import Dataset
 import numpy as np
+import pandas as pd
 from collections import Counter
 import itertools
 from utils import seq_to_kmers, gen_corpus
@@ -9,51 +10,62 @@ import json
 from pathlib import Path
 from joblib import Parallel, delayed
 
-def pad_seqs(batch):
+# def pad_seqs(batch):
 
-    '''pad all sequences of contexts_negatives samples to same length, pad with 0s and return mask'''
+#     '''pad all sequences of contexts_negatives samples to same length, pad with 0s and return mask'''
 
-    centers = [item[0] for item in batch]
-    contexts_negatives = [item[1] for item in batch]
-    labels = [item[2] for item in batch]
+#     centers = [item[0] for item in batch]
+#     contexts_negatives = [item[1] for item in batch]
+#     labels = [item[2] for item in batch]
 
-    # pad contexts_negative
-    max_len = max([len(c_n) for c_n in contexts_negatives])
-    samples = len(centers)
+#     # pad contexts_negative
+#     max_len = max([len(c_n) for c_n in contexts_negatives])
+#     samples = len(centers)
 
-    # mask with padded
-    c_n_padded = np.zeros((samples, max_len))
-    labels_padded = np.zeros((samples, max_len))
-    mask = np.zeros((samples, max_len))
+#     # mask with padded
+#     c_n_padded = np.zeros((samples, max_len))
+#     labels_padded = np.zeros((samples, max_len))
+#     mask = np.zeros((samples, max_len))
 
-    # fill in data
-    for i, c_n in enumerate(contexts_negatives):
-        seq_len = len(c_n)
-        c_n_padded[i, :seq_len] = c_n
-        mask[i, :seq_len] = 1
-        labels_padded[i, :seq_len] = labels[i]
+#     # fill in data
+#     for i, c_n in enumerate(contexts_negatives):
+#         seq_len = len(c_n)
+#         c_n_padded[i, :seq_len] = c_n
+#         mask[i, :seq_len] = 1
+#         labels_padded[i, :seq_len] = labels[i]
 
-    # np array to tensors
-    centers = torch.tensor(np.stack(centers, axis=0)).unsqueeze(1)
-    c_n_padded = torch.tensor(c_n_padded).long()
-    labels_padded = torch.tensor(labels_padded)
-    mask = torch.tensor(mask)
+#     # np array to tensors
+#     centers = torch.tensor(np.stack(centers, axis=0)).unsqueeze(1)
+#     c_n_padded = torch.tensor(c_n_padded).long()
+#     labels_padded = torch.tensor(labels_padded)
+#     mask = torch.tensor(mask)
 
-    return centers, c_n_padded, labels_padded, mask
+#     return centers, c_n_padded, labels_padded, mask
 
+
+def concat_seqs(batch):
+
+    '''concat centers, concat contexts, together for each batch'''
+
+    centers = torch.cat([torch.tensor(item[0]) for item in batch])
+    contexts = torch.cat([torch.tensor(item[1]) for item in batch])
+
+    # do not need pad
+    # centers and contexts are [batch, contexts]
+
+    return centers, contexts
 
 # too large to store in memory
 # preprocess vocab and store to text files
 # then get samples by byte index
 class PreprocessVocab:
 
-    def __init__(self, fn, k=3, min_freq=0, window=5, neg_samples=5, subsample_thresh=1e-4):
+    def __init__(self, fn, k=3, min_freq=0, window=5, subsample_thresh=1e-4):
 
         self.fn = fn
         self.k = k
         self.min_freq = min_freq
-        self.window = window
-        self.neg_samples = neg_samples
+        self.window = (window // 2) + 1  # how many behind and forward on window center
         self.subsample_thresh = subsample_thresh
 
 
@@ -119,7 +131,7 @@ class PreprocessVocab:
                 s.write(' '.join(map(str, line)))
                 s.write('\n')
 
-        return subsampled
+        return subsampled, counter
 
 
     def get_center_and_contexts(self):
@@ -171,23 +183,36 @@ class PreprocessVocab:
 
     def get_negative_samples(self):
 
-        '''select negative samples to update based on frequency'''
+        '''negative sampling distribution'''
 
-        subsampled_vocab = list(itertools.chain.from_iterable(self.subsampled))
-        subsampled_counter = Counter(subsampled_vocab)
-        weights = np.array([count**0.75 for word, count in subsampled_counter.items()])
-        prob = weights / np.sum(weights)
+        # merge idx2word and counts
+        df = pd.DataFrame.from_dict(self.idx2word, orient='index').reset_index()
+        df.columns = ['label', 'kmer']
+        counts = pd.DataFrame.from_dict(self.counter, orient='index').reset_index()
+        counts.columns = ['label', 'count']
+        df = df.merge(counts)
 
-        #negatives = Parallel(n_jobs=-1, backend='loky')(delayed(self.get_negative_sample)(i, center, self.neg_samples, subsampled_counter, prob, self.contexts) for i, center in enumerate(tqdm(self.centers)))
-        negatives = np.stack([self.get_negative_sample(i, center, self.neg_samples, subsampled_counter, prob, self.contexts) for i, center in enumerate(tqdm(self.centers))])
-        np.savetxt('preprocessed/negatives.txt', negatives, fmt='%i')
+        # calc and output propability for negative sampling
+        df['freq'] = df['count']**0.75
+        df['prob'] = df['count'] / df['count'].sum()
+        df = df.sort_values(by='label')  # move (0 : <unk>) from end to front
+
+#        subsampled_vocab = list(itertools.chain.from_iterable(self.subsampled))
+#        subsampled_counter = Counter(subsampled_vocab)
+#        weights = np.array([count**0.75 for word, count in subsampled_counter.items()])
+#        prob = weights / np.sum(weights)
+
+#        #negatives = Parallel(n_jobs=-1, backend='loky')(delayed(self.get_negative_sample)(i, center, self.neg_samples, subsampled_counter, prob, self.contexts) for i, center in enumerate(tqdm(self.centers)))
+#        negatives = np.stack([self.get_negative_sample(i, center, self.neg_samples, subsampled_counter, prob, self.contexts) for i, center in enumerate(tqdm(self.centers))])
+#        np.savetxt('preprocessed/negatives.txt', negatives, fmt='%i')
 
         # with open('preprocessed/negatives.txt', 'w') as n:
         #     for line in negatives:
         #         n.write(' '.join(map(str, line)))
         #         n.write('\n')
 
-        return negatives
+        #return negatives
+        df.to_csv('preprocessed/negatives.csv', index=False)
 
 
     def run_all(self):
@@ -206,13 +231,13 @@ class PreprocessVocab:
         self.corpus = self.label_encode()  # numerical
 
         print('subsampling')
-        self.subsampled = self.subsample_corpus()
+        self.subsampled, self.counter = self.subsample_corpus()
 
         print('generating positive pairs')
         self.centers, self.contexts = self.get_center_and_contexts()
 
-        print('generating negative samples')
-        self.negative_samples = self.get_negative_samples()
+        print('generating negative sampling probability')
+        self.get_negative_samples()
 
 
     # def __len__(self):
@@ -244,12 +269,10 @@ class ProtVecVocab(Dataset):
         self.idx2word = json.loads(Path('preprocessed/idx2word.json').read_bytes())
         self.centers_path = 'preprocessed/centers.txt'
         self.contexts_path = 'preprocessed/contexts.txt'
-        self.negatives_path = 'preprocessed/negatives.txt'
 
         # dictionary with byte offsets for each line
         self.centers_offsets = self.get_offsets(self.centers_path)
         self.contexts_offsets = self.get_offsets(self.contexts_path)
-        self.negative_offsets = self.get_offsets(self.negatives_path)
 
 
     def get_offsets(self, fn):
@@ -280,24 +303,25 @@ class ProtVecVocab(Dataset):
 
         center_idx = self.centers_offsets[idx]
         context_idx = self.contexts_offsets[idx]
-        negative_idx = self.negative_offsets[idx]
 
-        with open(self.centers_path, 'r') as ce, open(self.contexts_path, 'r') as co, open(self.negatives_path, 'r') as n:
+        with open(self.centers_path, 'r') as ce, open(self.contexts_path, 'r') as co:
             ce.seek(center_idx)
             co.seek(context_idx)
-            n.seek(negative_idx)
 
             centers = ce.readline().strip()
             contexts = co.readline().split()
-            negatives = n.readline().split()
 
-        # to numpy array and reshape
-        centers = np.array(centers, dtype=np.int)
+        # to numpy array and reshape to pair with contexts
+        contexts = np.array(contexts, dtype=np.int)
+        centers = np.full(len(contexts), centers, dtype=np.int)
 
+        ### keep contexts and negatives separate
         # combine contexts (positives) and negatives into single vector, labels is classifier pos or neg
         # must pad contexts_negatives, will have different lengths due to random sample in each batch
-        contexts_negatives = np.array([contexts + negatives], dtype=np.int).squeeze(0)
-        labels = np.concatenate([np.ones(len(contexts)), np.zeros(len(negatives))]).astype(np.int)
+        #contexts_negatives = np.array([contexts + negatives], dtype=np.int).squeeze(0)
 
-        return centers, contexts_negatives, labels
+
+        # labels = np.concatenate([np.ones(len(contexts)), np.zeros(len(negatives))]).astype(np.int)
+
+        return centers, contexts
 

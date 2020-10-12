@@ -254,7 +254,6 @@ def calc_props():
     kmers_dict = json.loads(Path('./preprocessed/word2idx.json').read_bytes())
     kmers = list(kmers_dict.keys())[:-1]  # ignore <unk>
     df = pd.DataFrame({'kmer' : kmers})
-    df = df.sample(100)
 
     aa_props = pd.read_csv('inputs/aa_props.csv')
     aa2idx = aa_props[['aa_1']]

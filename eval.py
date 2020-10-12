@@ -41,10 +41,10 @@ def tsne_plots(output='./outputs/tsne_plots.png'):
 
     # keep only embedding data for TSNE
     embeds = df[df.columns.difference(no_embed)].values
-    embeds_sc = StandardScaler().fit_transform(embeds)
+    #embeds_sc = StandardScaler().fit_transform(embeds)
     
     tsne = TSNE(n_components=2, n_jobs=-1)
-    embeds_tsne = tsne.fit_transform(embeds_sc)
+    embeds_tsne = tsne.fit_transform(embeds)
 
     # plot
     fig = plt.figure(figsize=(12, 7))
