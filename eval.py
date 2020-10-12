@@ -2,6 +2,7 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 from sklearn.manifold import TSNE
+from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 
@@ -42,19 +43,22 @@ def tsne_plots(output='./outputs/tsne_plots.png'):
     # keep only embedding data for TSNE
     embeds = df[df.columns.difference(no_embed)].values
     #embeds_sc = StandardScaler().fit_transform(embeds)
-    
+
     tsne = TSNE(n_components=2, n_jobs=-1)
     embeds_tsne = tsne.fit_transform(embeds)
+    #pca = PCA(n_components=2)
+    #embeds_pca = pca.fit_transform(embeds)
 
     # plot
     fig = plt.figure(figsize=(12, 7))
-    
+
     # loop each prop separately
     # plt to set each subplots colorbar separately
     for i, prop in enumerate(props):
         plt.subplot(2, 3, i+1)
-        p = plt.scatter(embeds_tsne[:, 0], embeds_tsne[:, 1], c=df[prop])
-        plt.colorbar(p)
+        p = plt.scatter(embeds_tsne[:, 0], embeds_tsne[:, 1], c=df[prop], alpha=0.2, s=3)
+        cbar = plt.colorbar(p)
+        cbar.solids.set(alpha = 1)  # colorbar no transparency
         plt.title(names[prop])
 
     plt.tight_layout()

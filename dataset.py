@@ -169,17 +169,17 @@ class PreprocessVocab:
 
         return centers, contexts
 
-    def get_negative_sample(self, i, center, neg_samples, subsampled_counter, prob, contexts):
+    # def get_negative_sample(self, i, center, neg_samples, subsampled_counter, prob, contexts):
 
-        samples = []
-        while len(samples) < neg_samples:
-            neg = np.random.choice(list(subsampled_counter.keys()), size=1, p=prob)
+    #     samples = []
+    #     while len(samples) < neg_samples:
+    #         neg = np.random.choice(list(subsampled_counter.keys()), size=1, p=prob)
 
-            # neg is not in contexts and not center
-            if neg not in contexts[i] and neg != center:
-                samples.append(neg.item())
+    #         # neg is not in contexts and not center
+    #         if neg not in contexts[i] and neg != center:
+    #             samples.append(neg.item())
 
-        return np.array(samples, dtype=np.int32)
+    #     return np.array(samples, dtype=np.int32)
 
     def get_negative_samples(self):
 
@@ -213,6 +213,22 @@ class PreprocessVocab:
 
         #return negatives
         df.to_csv('preprocessed/negatives.csv', index=False)
+
+
+    def gensim_setup(self):
+
+        print('tokenizing')
+        self.raw_corpus = gen_corpus(self.fn, self.k)  # word tokens
+        with open('preprocessed/corpus.txt', 'w') as c:
+            for seq in self.raw_corpus:
+                c.write(' '.join(seq))
+                c.write('\n')
+
+        print('mapping vocab')
+        self.word2idx, self.idx2word = self.corpus_to_mappings()
+
+        print('numericalizing')
+        self.corpus = self.label_encode()  # numerical
 
 
     def run_all(self):

@@ -15,21 +15,21 @@ def parse_args():
                         help='Path to corpus file containing amino acid sequences')
     parser.add_argument('-m', '--min', type=int, default=3,
                         help='Minimum frequency for kmer (default: 3)')
-    parser.add_argument('-n', '--context', type=int, default=13,
+    parser.add_argument('-n', '--context', type=int, default=25,
                         help='Context size, select context//2 + 1 around center (default: 25)')
-    parser.add_argument('-k', '--ngram', type=int, default=25,
-                        help='Ngram size (default: 3')
+    parser.add_argument('-k', '--ngram', type=int, default=3,
+                        help='Ngram size (default: 3)')
     parser.add_argument('-g', '--neg', type=int, default=5,
                         help='Number of negative samples (default: 5)')
     parser.add_argument('-b', '--batch', type=int, default=512,
-                        help='Batch size (default: 512')
+                        help='Batch size (default: 512)')
 
     parser.add_argument('-t', '--train', action='store_true',
                         help='Train model')
     parser.add_argument('-e', '--embed', type=int, default=100,
-                        help='Embedding dimension size (default: 100')
+                        help='Embedding dimension size (default: 100)')
     parser.add_argument('-l', '--lr', type=float, default=0.003,
-                        help='Learning rate (default: 0.003')
+                        help='Learning rate (default: 0.003)')
     parser.add_argument('-p', '--epochs', type=int, default=5,
                         help='Epochs (default: 5)')
     parser.add_argument('-o', '--output', type=str, default='outputs/embeds.txt',
@@ -94,7 +94,7 @@ def train_negsamp(model, loader, optimizer, neg_samples):
         losses += loss.item()
 
     # average loss per batch
-    return losses / len(loader) 
+    return losses / len(loader)
 
 
 def save_embeds(model, dataset, embed_size, filename):

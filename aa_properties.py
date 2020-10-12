@@ -1,5 +1,5 @@
 from pathlib import Path
-import requests 
+import requests
 import pandas as pd
 import numpy as np
 from bs4 import BeautifulSoup
@@ -21,28 +21,28 @@ def parse_args():
 
 
 def get_code():
-    
+
     '''aa name to three letter and one letter'''
 
     url = 'https://www.anaspec.com/html/amino_acid_codes.html'
     r = requests.get(url)
     assert r.status_code == 200, 'invalid request'
     soup = BeautifulSoup(r.content, 'lxml')
-    
+
     aa_table = soup.find_all('table')[1]
-    
+
     res = []
     for tr in aa_table.find_all('tr'):
         aa_data = []
         for td in tr.find_all('td'):
              aa_data.append(td.text.strip())
-                
+
         res.append(aa_data)
-        
-    del res[0] 
-        
+
+    del res[0]
+
     df = pd.DataFrame(res, columns=['name', 'aa_3', 'aa_1'])
-    
+
     return df
 
 
@@ -52,7 +52,7 @@ def get_mass():
     r = requests.get(url)
     assert r.status_code == 200, 'invalid request'
     soup = BeautifulSoup(r.content, 'lxml')
-    
+
     # get data from table
     aa_table = soup.find('table')
     res = []
@@ -60,41 +60,41 @@ def get_mass():
         aa_data = []
         for td in tr.find_all('td'):
             aa_data.append(td.text)
-            
+
         res.append(aa_data)
-        
+
     # drop first blank
     del res[0]
-   
+
     df = pd.DataFrame(res, columns=['aa_1', 'aa_3', 'chem_struct', 'monoiso', 'mass'])
-    
+
     return df
 
 
 def get_pi():
 
     '''isoelectric point'''
-    
+
     url = 'http://www.chem.ucalgary.ca/courses/351/Carey5th/Ch27/ch27-1-4-2.html'
     r = requests.get(url)
     assert r.status_code == 200, 'invalid request'
     soup = BeautifulSoup(r.content, 'lxml')
-    
+
     # second table on page
     aa_table = soup.find_all('table')[1]
-    
+
     res = []
     for tr in aa_table.find_all('tr'):
         aa_data = []
         for td in tr.find_all('td'):
             aa_data.append(td.text.strip())
-            
+
         res.append(aa_data)
-        
+
     # delete header and blank end
     del res[0]
     del res[-1]
-    
+
     df = pd.DataFrame(res, columns=['aa', 'pka_1', 'pka_2', 'pka_3', 'pI'])
     df['aa'] = df['aa'].apply(lambda x: x.title())  # capitalize Acid in aspartic/glutamic acid to merge later
 
@@ -102,55 +102,55 @@ def get_pi():
     # keep only numeric
     # pat = re.compile(r'\d+\.\d+')
     # df['pI'] = df['pI'].apply(lambda x: pat.match(x).group(0))
-            
+
     return df
 
 
 def get_volume():
-    
+
     url = 'http://www.imgt.org/IMGTeducation/Aide-memoire/_UK/aminoacids/abbreviation.html'
     r = requests.get(url)
     assert r.status_code == 200, 'invalid request'
     soup = BeautifulSoup(r.content, 'lxml')
-    
+
     aa_table = soup.find('table')
-    
+
     res = []
     for tr in aa_table.find_all('tr'):
         aa_data = []
         for td in tr.find_all('td'):
             aa_data.append(td.text)
-            
+
         res.append(aa_data)
-        
+
     # blank header
-    del res[0] 
-        
+    del res[0]
+
     df = pd.DataFrame(res, columns=['aa', 'aa_3', 'aa_1', 'mass', 'n_atoms', 'volume', 'hydropathy'])
-    
+
     # drop asx and glx
     df = df[~df['aa'].str.contains('or')]
-            
+
     return df
 
 
 def get_hydrophobicity():
-    
+
     # will not work with default request headers
     headers = {"User-Agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36"}
-    r = requests.get('https://www.sigmaaldrich.com/life-science/metabolomics/learning-center/amino-acid-reference-chart.html', 
+    r = requests.get('https://www.sigmaaldrich.com/life-science/metabolomics/learning-center/amino-acid-reference-chart.html',
                      headers=headers)
     assert r.status_code == 200, 'invalid request'
     soup = BeautifulSoup(r.content, 'lxml')
-    
+
     to_skip = ['At', 'Hydrophobic', 'Neutral', 'Hydrophilic', 'values']
 
     aa_names = []
     aa_hydro = []
-    
+
     aa_table = soup.find_all('table')[1]
 
-    # save second 
+    # save second
     for tr in aa_table.find_all('tr'):
         for td in tr.find_all('td'):
             # skip the headers and footnotes
@@ -171,7 +171,7 @@ def get_hydrophobicity():
     # remove first col, manually select due to ragged table
     aa_names = aa_names[1:28:2] + aa_names[30::2] + aa_names[-1:]
     aa_hydro = aa_hydro[1:28:2] + aa_hydro[30::2] + aa_hydro[-1:]
-    
+
     df = pd.DataFrame({'aa_3' : aa_names,
                        'hydrophobicity' : aa_hydro})
 
@@ -179,12 +179,12 @@ def get_hydrophobicity():
 
 
 def get_vdw_volume():
-    
+
     url = 'https://en.wikipedia.org/wiki/Proteinogenic_amino_acid'
     r = requests.get(url)
     assert r.status_code == 200, 'invalid request'
     soup = BeautifulSoup(r.content, 'lxml')
-    
+
     aa_table = soup.find_all('table')[1]
     res = []
     for tr in aa_table.find_all('tr'):
@@ -195,24 +195,24 @@ def get_vdw_volume():
         res.append(aa_data)
 
     # empty header
-    del res[0] 
-        
-    df = pd.DataFrame(res, columns=['aa_1', 'aa_3', 'side_chain', 'hydro', 'pka', 
+    del res[0]
+
+    df = pd.DataFrame(res, columns=['aa_1', 'aa_3', 'side_chain', 'hydro', 'pka',
                                     'polar', 'ph', 'small', 'tiny', 'ali_aro', 'vdw_vol'])
-    
+
     df = df.query("vdw_vol != '?'")
-    
+
     return df[['aa_1', 'aa_3', 'vdw_vol']]
 
 
 def get_polarity():
-    
+
     aa = 'ACDEFGHIKLMNPQRSTVWY'
     polarity = [7, 8, 18, 17, 4, 9, 13, 2, 15, 1, 5, 16, 11.5, 14, 19, 12, 11, 3, 6, 10]
-    
+
     df = pd.DataFrame({'aa_1' : list(aa),
                        'polarity' : polarity})
-    
+
     return df
 
 
@@ -246,7 +246,12 @@ def calc_props():
 
         res = 0
         for aa in kmer:
-            idx = aa2idx.query("aa_1 == @aa").index.values[0]
+
+            # replace noncanonical with ala
+            try:
+                idx = aa2idx.query("aa_1 == @aa").index.values[0]
+            except:
+                idx = aa2idx.query("aa_1 == 'A'").index.values[0]
             res += prop.values[idx]
 
         return res
