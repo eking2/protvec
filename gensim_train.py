@@ -3,13 +3,16 @@ from dataset import PreprocessVocab
 from gensim.models import Word2Vec, callbacks
 import multiprocessing as mp
 import argparse
-import logger
+import logging
 
-logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+# log to file and console
+logging.basicConfig(filename='outputs/gensim_train.log',
+                    format='%(asctime)s : %(levelname)s : %(message)s', 
+                    level=logging.INFO)
+logging.getLogger().addHandler(logging.StreamHandler())
 
 # train using gensim
-# manual implementation is too slow
-
+# manual implementation is too slow/memory intensive
 
 def parse_args():
 
@@ -56,7 +59,7 @@ class callback(callbacks.CallbackAny2Vec):
         loss = model.get_latest_training_loss()
         epoch_loss = loss - self.last_loss
         self.last_loss = loss
-        print(f'Epoch: {self.epoch:02} | Loss: {epoch_loss:.2f}')
+        logging.info(f'Epoch: {self.epoch + 1:02} | Loss: {epoch_loss:,.2f}')
         self.epoch += 1
 
 

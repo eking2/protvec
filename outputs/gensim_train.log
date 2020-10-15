@@ -1,0 +1,1062 @@
+2020-10-14 23:01:23,124 : INFO : collecting all words and their counts
+2020-10-14 23:01:23,125 : INFO : PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2020-10-14 23:01:23,271 : INFO : PROGRESS: at sentence #10000, processed 1027711 words, keeping 8005 word types
+2020-10-14 23:01:23,420 : INFO : PROGRESS: at sentence #20000, processed 2032448 words, keeping 8009 word types
+2020-10-14 23:01:23,587 : INFO : PROGRESS: at sentence #30000, processed 3165752 words, keeping 8022 word types
+2020-10-14 23:01:23,736 : INFO : PROGRESS: at sentence #40000, processed 4174879 words, keeping 8022 word types
+2020-10-14 23:01:23,885 : INFO : PROGRESS: at sentence #50000, processed 5172123 words, keeping 8025 word types
+2020-10-14 23:01:24,049 : INFO : PROGRESS: at sentence #60000, processed 6273745 words, keeping 8104 word types
+2020-10-14 23:01:24,210 : INFO : PROGRESS: at sentence #70000, processed 7350160 words, keeping 8149 word types
+2020-10-14 23:01:24,362 : INFO : PROGRESS: at sentence #80000, processed 8364676 words, keeping 8151 word types
+2020-10-14 23:01:24,515 : INFO : PROGRESS: at sentence #90000, processed 9373271 words, keeping 8172 word types
+2020-10-14 23:01:24,670 : INFO : PROGRESS: at sentence #100000, processed 10401556 words, keeping 8172 word types
+2020-10-14 23:01:24,822 : INFO : PROGRESS: at sentence #110000, processed 11406400 words, keeping 8176 word types
+2020-10-14 23:01:24,984 : INFO : PROGRESS: at sentence #120000, processed 12471505 words, keeping 8176 word types
+2020-10-14 23:01:25,135 : INFO : PROGRESS: at sentence #130000, processed 13463699 words, keeping 8176 word types
+2020-10-14 23:01:25,288 : INFO : PROGRESS: at sentence #140000, processed 14470434 words, keeping 8179 word types
+2020-10-14 23:01:25,447 : INFO : PROGRESS: at sentence #150000, processed 15530665 words, keeping 8185 word types
+2020-10-14 23:01:25,595 : INFO : PROGRESS: at sentence #160000, processed 16503631 words, keeping 8185 word types
+2020-10-14 23:01:25,755 : INFO : PROGRESS: at sentence #170000, processed 17566948 words, keeping 8185 word types
+2020-10-14 23:01:25,911 : INFO : PROGRESS: at sentence #180000, processed 18600008 words, keeping 8185 word types
+2020-10-14 23:01:26,066 : INFO : PROGRESS: at sentence #190000, processed 19623352 words, keeping 8214 word types
+2020-10-14 23:01:26,217 : INFO : PROGRESS: at sentence #200000, processed 20617624 words, keeping 8214 word types
+2020-10-14 23:01:26,370 : INFO : PROGRESS: at sentence #210000, processed 21629387 words, keeping 8227 word types
+2020-10-14 23:01:26,522 : INFO : PROGRESS: at sentence #220000, processed 22639575 words, keeping 8227 word types
+2020-10-14 23:01:26,674 : INFO : PROGRESS: at sentence #230000, processed 23639745 words, keeping 8227 word types
+2020-10-14 23:01:26,825 : INFO : PROGRESS: at sentence #240000, processed 24639901 words, keeping 8232 word types
+2020-10-14 23:01:26,975 : INFO : PROGRESS: at sentence #250000, processed 25638389 words, keeping 8234 word types
+2020-10-14 23:01:27,128 : INFO : PROGRESS: at sentence #260000, processed 26647623 words, keeping 8238 word types
+2020-10-14 23:01:27,284 : INFO : PROGRESS: at sentence #270000, processed 27681643 words, keeping 8242 word types
+2020-10-14 23:01:27,434 : INFO : PROGRESS: at sentence #280000, processed 28669741 words, keeping 8242 word types
+2020-10-14 23:01:27,580 : INFO : PROGRESS: at sentence #290000, processed 29632055 words, keeping 8242 word types
+2020-10-14 23:01:27,732 : INFO : PROGRESS: at sentence #300000, processed 30636453 words, keeping 8242 word types
+2020-10-14 23:01:27,883 : INFO : PROGRESS: at sentence #310000, processed 31639007 words, keeping 8257 word types
+2020-10-14 23:01:28,031 : INFO : PROGRESS: at sentence #320000, processed 32611755 words, keeping 8260 word types
+2020-10-14 23:01:28,186 : INFO : PROGRESS: at sentence #330000, processed 33621597 words, keeping 8289 word types
+2020-10-14 23:01:28,353 : INFO : PROGRESS: at sentence #340000, processed 34735012 words, keeping 8291 word types
+2020-10-14 23:01:28,503 : INFO : PROGRESS: at sentence #350000, processed 35723609 words, keeping 8291 word types
+2020-10-14 23:01:28,654 : INFO : PROGRESS: at sentence #360000, processed 36717107 words, keeping 8447 word types
+2020-10-14 23:01:28,803 : INFO : PROGRESS: at sentence #370000, processed 37706904 words, keeping 8452 word types
+2020-10-14 23:01:28,948 : INFO : PROGRESS: at sentence #380000, processed 38660912 words, keeping 8452 word types
+2020-10-14 23:01:29,095 : INFO : PROGRESS: at sentence #390000, processed 39631511 words, keeping 8459 word types
+2020-10-14 23:01:29,243 : INFO : PROGRESS: at sentence #400000, processed 40606523 words, keeping 8468 word types
+2020-10-14 23:01:29,395 : INFO : PROGRESS: at sentence #410000, processed 41608535 words, keeping 8468 word types
+2020-10-14 23:01:29,546 : INFO : PROGRESS: at sentence #420000, processed 42609269 words, keeping 8469 word types
+2020-10-14 23:01:29,690 : INFO : PROGRESS: at sentence #430000, processed 43552842 words, keeping 8469 word types
+2020-10-14 23:01:29,845 : INFO : PROGRESS: at sentence #440000, processed 44585216 words, keeping 8474 word types
+2020-10-14 23:01:29,993 : INFO : PROGRESS: at sentence #450000, processed 45556590 words, keeping 8489 word types
+2020-10-14 23:01:30,140 : INFO : PROGRESS: at sentence #460000, processed 46529953 words, keeping 8489 word types
+2020-10-14 23:01:30,287 : INFO : PROGRESS: at sentence #470000, processed 47499387 words, keeping 8489 word types
+2020-10-14 23:01:30,427 : INFO : PROGRESS: at sentence #480000, processed 48426229 words, keeping 8491 word types
+2020-10-14 23:01:30,576 : INFO : PROGRESS: at sentence #490000, processed 49405320 words, keeping 8491 word types
+2020-10-14 23:01:30,740 : INFO : PROGRESS: at sentence #500000, processed 50501445 words, keeping 8495 word types
+2020-10-14 23:01:30,914 : INFO : PROGRESS: at sentence #510000, processed 51675346 words, keeping 8590 word types
+2020-10-14 23:01:31,102 : INFO : PROGRESS: at sentence #520000, processed 52940454 words, keeping 8618 word types
+2020-10-14 23:01:31,281 : INFO : PROGRESS: at sentence #530000, processed 54142540 words, keeping 8653 word types
+2020-10-14 23:01:31,422 : INFO : PROGRESS: at sentence #540000, processed 55057682 words, keeping 8665 word types
+2020-10-14 23:01:31,596 : INFO : PROGRESS: at sentence #550000, processed 56221474 words, keeping 8711 word types
+2020-10-14 23:01:31,768 : INFO : PROGRESS: at sentence #560000, processed 57369563 words, keeping 8738 word types
+2020-10-14 23:01:31,947 : INFO : PROGRESS: at sentence #570000, processed 58570581 words, keeping 8787 word types
+2020-10-14 23:01:32,102 : INFO : PROGRESS: at sentence #580000, processed 59595189 words, keeping 9243 word types
+2020-10-14 23:01:32,248 : INFO : PROGRESS: at sentence #590000, processed 60557208 words, keeping 9382 word types
+2020-10-14 23:01:32,407 : INFO : PROGRESS: at sentence #600000, processed 61616721 words, keeping 9405 word types
+2020-10-14 23:01:32,534 : INFO : PROGRESS: at sentence #610000, processed 62461616 words, keeping 9409 word types
+2020-10-14 23:01:32,664 : INFO : PROGRESS: at sentence #620000, processed 63325831 words, keeping 9420 word types
+2020-10-14 23:01:32,818 : INFO : PROGRESS: at sentence #630000, processed 64374210 words, keeping 9428 word types
+2020-10-14 23:01:32,970 : INFO : PROGRESS: at sentence #640000, processed 65389574 words, keeping 9463 word types
+2020-10-14 23:01:33,140 : INFO : PROGRESS: at sentence #650000, processed 66522245 words, keeping 9487 word types
+2020-10-14 23:01:33,302 : INFO : PROGRESS: at sentence #660000, processed 67605820 words, keeping 9522 word types
+2020-10-14 23:01:33,472 : INFO : PROGRESS: at sentence #670000, processed 68743122 words, keeping 9574 word types
+2020-10-14 23:01:33,640 : INFO : PROGRESS: at sentence #680000, processed 69883042 words, keeping 9617 word types
+2020-10-14 23:01:33,816 : INFO : PROGRESS: at sentence #690000, processed 71071009 words, keeping 9671 word types
+2020-10-14 23:01:33,990 : INFO : PROGRESS: at sentence #700000, processed 72253431 words, keeping 9695 word types
+2020-10-14 23:01:34,159 : INFO : PROGRESS: at sentence #710000, processed 73393412 words, keeping 9703 word types
+2020-10-14 23:01:34,320 : INFO : PROGRESS: at sentence #720000, processed 74476554 words, keeping 9723 word types
+2020-10-14 23:01:34,492 : INFO : PROGRESS: at sentence #730000, processed 75635066 words, keeping 9760 word types
+2020-10-14 23:01:34,662 : INFO : PROGRESS: at sentence #740000, processed 76785179 words, keeping 9767 word types
+2020-10-14 23:01:34,826 : INFO : PROGRESS: at sentence #750000, processed 77884715 words, keeping 9771 word types
+2020-10-14 23:01:34,972 : INFO : PROGRESS: at sentence #760000, processed 78853226 words, keeping 9800 word types
+2020-10-14 23:01:35,102 : INFO : PROGRESS: at sentence #770000, processed 79714743 words, keeping 9800 word types
+2020-10-14 23:01:35,214 : INFO : PROGRESS: at sentence #780000, processed 80442417 words, keeping 9802 word types
+2020-10-14 23:01:35,376 : INFO : PROGRESS: at sentence #790000, processed 81524822 words, keeping 9816 word types
+2020-10-14 23:01:35,502 : INFO : PROGRESS: at sentence #800000, processed 82339927 words, keeping 9872 word types
+2020-10-14 23:01:35,665 : INFO : PROGRESS: at sentence #810000, processed 83439642 words, keeping 9875 word types
+2020-10-14 23:01:35,836 : INFO : PROGRESS: at sentence #820000, processed 84602246 words, keeping 9878 word types
+2020-10-14 23:01:35,999 : INFO : PROGRESS: at sentence #830000, processed 85692034 words, keeping 9878 word types
+2020-10-14 23:01:36,161 : INFO : PROGRESS: at sentence #840000, processed 86770099 words, keeping 9882 word types
+2020-10-14 23:01:36,332 : INFO : PROGRESS: at sentence #850000, processed 87923585 words, keeping 9886 word types
+2020-10-14 23:01:36,490 : INFO : PROGRESS: at sentence #860000, processed 88975424 words, keeping 9886 word types
+2020-10-14 23:01:36,657 : INFO : PROGRESS: at sentence #870000, processed 90089335 words, keeping 9886 word types
+2020-10-14 23:01:36,812 : INFO : PROGRESS: at sentence #880000, processed 91118201 words, keeping 9886 word types
+2020-10-14 23:01:36,986 : INFO : PROGRESS: at sentence #890000, processed 92287700 words, keeping 9886 word types
+2020-10-14 23:01:37,160 : INFO : PROGRESS: at sentence #900000, processed 93457518 words, keeping 9889 word types
+2020-10-14 23:01:37,322 : INFO : PROGRESS: at sentence #910000, processed 94539428 words, keeping 9895 word types
+2020-10-14 23:01:37,477 : INFO : PROGRESS: at sentence #920000, processed 95566987 words, keeping 9895 word types
+2020-10-14 23:01:37,627 : INFO : PROGRESS: at sentence #930000, processed 96563149 words, keeping 9895 word types
+2020-10-14 23:01:37,788 : INFO : PROGRESS: at sentence #940000, processed 97619733 words, keeping 9899 word types
+2020-10-14 23:01:37,950 : INFO : PROGRESS: at sentence #950000, processed 98698943 words, keeping 9904 word types
+2020-10-14 23:01:38,115 : INFO : PROGRESS: at sentence #960000, processed 99803182 words, keeping 9920 word types
+2020-10-14 23:01:38,274 : INFO : PROGRESS: at sentence #970000, processed 100857080 words, keeping 9920 word types
+2020-10-14 23:01:38,426 : INFO : PROGRESS: at sentence #980000, processed 101870376 words, keeping 9922 word types
+2020-10-14 23:01:38,594 : INFO : PROGRESS: at sentence #990000, processed 102993982 words, keeping 9922 word types
+2020-10-14 23:01:38,746 : INFO : PROGRESS: at sentence #1000000, processed 103998082 words, keeping 9925 word types
+2020-10-14 23:01:38,901 : INFO : PROGRESS: at sentence #1010000, processed 105033313 words, keeping 9936 word types
+2020-10-14 23:01:39,055 : INFO : PROGRESS: at sentence #1020000, processed 106057040 words, keeping 9937 word types
+2020-10-14 23:01:39,206 : INFO : PROGRESS: at sentence #1030000, processed 107058954 words, keeping 9937 word types
+2020-10-14 23:01:39,377 : INFO : PROGRESS: at sentence #1040000, processed 108203554 words, keeping 9939 word types
+2020-10-14 23:01:39,533 : INFO : PROGRESS: at sentence #1050000, processed 109243821 words, keeping 9939 word types
+2020-10-14 23:01:39,688 : INFO : PROGRESS: at sentence #1060000, processed 110276777 words, keeping 9939 word types
+2020-10-14 23:01:39,848 : INFO : PROGRESS: at sentence #1070000, processed 111338674 words, keeping 9941 word types
+2020-10-14 23:01:40,020 : INFO : PROGRESS: at sentence #1080000, processed 112480801 words, keeping 9942 word types
+2020-10-14 23:01:40,196 : INFO : PROGRESS: at sentence #1090000, processed 113659769 words, keeping 9951 word types
+2020-10-14 23:01:40,390 : INFO : PROGRESS: at sentence #1100000, processed 114917704 words, keeping 9953 word types
+2020-10-14 23:01:40,548 : INFO : PROGRESS: at sentence #1110000, processed 115906578 words, keeping 9955 word types
+2020-10-14 23:01:40,751 : INFO : PROGRESS: at sentence #1120000, processed 117217007 words, keeping 9956 word types
+2020-10-14 23:01:40,920 : INFO : PROGRESS: at sentence #1130000, processed 118295058 words, keeping 9969 word types
+2020-10-14 23:01:41,084 : INFO : PROGRESS: at sentence #1140000, processed 119329190 words, keeping 9970 word types
+2020-10-14 23:01:41,251 : INFO : PROGRESS: at sentence #1150000, processed 120384766 words, keeping 9972 word types
+2020-10-14 23:01:41,450 : INFO : PROGRESS: at sentence #1160000, processed 121667678 words, keeping 9974 word types
+2020-10-14 23:01:41,631 : INFO : PROGRESS: at sentence #1170000, processed 122828979 words, keeping 9974 word types
+2020-10-14 23:01:41,815 : INFO : PROGRESS: at sentence #1180000, processed 124002840 words, keeping 9979 word types
+2020-10-14 23:01:42,005 : INFO : PROGRESS: at sentence #1190000, processed 125227572 words, keeping 9999 word types
+2020-10-14 23:01:42,176 : INFO : PROGRESS: at sentence #1200000, processed 126317531 words, keeping 9999 word types
+2020-10-14 23:01:42,358 : INFO : PROGRESS: at sentence #1210000, processed 127483046 words, keeping 10009 word types
+2020-10-14 23:01:42,548 : INFO : PROGRESS: at sentence #1220000, processed 128704819 words, keeping 10012 word types
+2020-10-14 23:01:42,723 : INFO : PROGRESS: at sentence #1230000, processed 129816332 words, keeping 10012 word types
+2020-10-14 23:01:42,894 : INFO : PROGRESS: at sentence #1240000, processed 130903318 words, keeping 10018 word types
+2020-10-14 23:01:43,084 : INFO : PROGRESS: at sentence #1250000, processed 132118323 words, keeping 10018 word types
+2020-10-14 23:01:43,267 : INFO : PROGRESS: at sentence #1260000, processed 133290202 words, keeping 10025 word types
+2020-10-14 23:01:43,433 : INFO : PROGRESS: at sentence #1270000, processed 134346148 words, keeping 10025 word types
+2020-10-14 23:01:43,604 : INFO : PROGRESS: at sentence #1280000, processed 135434201 words, keeping 10025 word types
+2020-10-14 23:01:43,779 : INFO : PROGRESS: at sentence #1290000, processed 136549431 words, keeping 10025 word types
+2020-10-14 23:01:43,947 : INFO : PROGRESS: at sentence #1300000, processed 137646935 words, keeping 10025 word types
+2020-10-14 23:01:44,124 : INFO : PROGRESS: at sentence #1310000, processed 138837074 words, keeping 10026 word types
+2020-10-14 23:01:44,285 : INFO : PROGRESS: at sentence #1320000, processed 139908495 words, keeping 10026 word types
+2020-10-14 23:01:44,460 : INFO : PROGRESS: at sentence #1330000, processed 141084832 words, keeping 10030 word types
+2020-10-14 23:01:44,619 : INFO : PROGRESS: at sentence #1340000, processed 142143168 words, keeping 10030 word types
+2020-10-14 23:01:44,818 : INFO : PROGRESS: at sentence #1350000, processed 143506373 words, keeping 10030 word types
+2020-10-14 23:01:44,977 : INFO : PROGRESS: at sentence #1360000, processed 144566348 words, keeping 10030 word types
+2020-10-14 23:01:45,138 : INFO : PROGRESS: at sentence #1370000, processed 145641287 words, keeping 10031 word types
+2020-10-14 23:01:45,324 : INFO : PROGRESS: at sentence #1380000, processed 146904787 words, keeping 10035 word types
+2020-10-14 23:01:45,511 : INFO : PROGRESS: at sentence #1390000, processed 148162689 words, keeping 10047 word types
+2020-10-14 23:01:45,682 : INFO : PROGRESS: at sentence #1400000, processed 149312863 words, keeping 10048 word types
+2020-10-14 23:01:45,846 : INFO : PROGRESS: at sentence #1410000, processed 150417689 words, keeping 10054 word types
+2020-10-14 23:01:46,019 : INFO : PROGRESS: at sentence #1420000, processed 151575331 words, keeping 10067 word types
+2020-10-14 23:01:46,183 : INFO : PROGRESS: at sentence #1430000, processed 152673666 words, keeping 10068 word types
+2020-10-14 23:01:46,358 : INFO : PROGRESS: at sentence #1440000, processed 153858001 words, keeping 10068 word types
+2020-10-14 23:01:46,542 : INFO : PROGRESS: at sentence #1450000, processed 155104115 words, keeping 10072 word types
+2020-10-14 23:01:46,706 : INFO : PROGRESS: at sentence #1460000, processed 156208893 words, keeping 10103 word types
+2020-10-14 23:01:46,878 : INFO : PROGRESS: at sentence #1470000, processed 157362903 words, keeping 10107 word types
+2020-10-14 23:01:47,040 : INFO : PROGRESS: at sentence #1480000, processed 158447200 words, keeping 10107 word types
+2020-10-14 23:01:47,234 : INFO : PROGRESS: at sentence #1490000, processed 159757488 words, keeping 10111 word types
+2020-10-14 23:01:47,412 : INFO : PROGRESS: at sentence #1500000, processed 160964698 words, keeping 10119 word types
+2020-10-14 23:01:47,580 : INFO : PROGRESS: at sentence #1510000, processed 162088518 words, keeping 10122 word types
+2020-10-14 23:01:47,772 : INFO : PROGRESS: at sentence #1520000, processed 163395121 words, keeping 10132 word types
+2020-10-14 23:01:47,948 : INFO : PROGRESS: at sentence #1530000, processed 164579839 words, keeping 10135 word types
+2020-10-14 23:01:48,137 : INFO : PROGRESS: at sentence #1540000, processed 165863535 words, keeping 10135 word types
+2020-10-14 23:01:48,321 : INFO : PROGRESS: at sentence #1550000, processed 167103904 words, keeping 10145 word types
+2020-10-14 23:01:48,514 : INFO : PROGRESS: at sentence #1560000, processed 168360151 words, keeping 10150 word types
+2020-10-14 23:01:48,696 : INFO : PROGRESS: at sentence #1570000, processed 169523584 words, keeping 10150 word types
+2020-10-14 23:01:48,763 : INFO : collected 10150 word types from a corpus of 169953976 raw words and 1573587 sentences
+2020-10-14 23:01:48,763 : INFO : Loading a fresh vocabulary
+2020-10-14 23:01:48,776 : INFO : effective_min_count=3 retains 9243 unique words (91% of original 10150, drops 907)
+2020-10-14 23:01:48,776 : INFO : effective_min_count=3 leaves 169952788 word corpus (99% of original 169953976, drops 1188)
+2020-10-14 23:01:48,791 : INFO : deleting the raw counts dictionary of 10150 items
+2020-10-14 23:01:48,792 : INFO : sample=0.001 downsamples 0 most-common words
+2020-10-14 23:01:48,792 : INFO : downsampling leaves estimated 169952788 word corpus (100.0% of prior 169952788)
+2020-10-14 23:01:48,807 : INFO : estimated required memory for 9243 words and 100 dimensions: 12015900 bytes
+2020-10-14 23:01:48,807 : INFO : resetting layer weights
+2020-10-14 23:01:48,867 : INFO : training model with 159 workers on 9243 vocabulary and 100 features, using sg=1 hs=0 sample=0.001 negative=5 window=25
+2020-10-14 23:05:40,198 : INFO : EPOCH 1 - PROGRESS: at 0.82% examples, 4632 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:05:40,201 : INFO : worker thread finished; awaiting finish of 158 more threads
+2020-10-14 23:05:40,809 : INFO : worker thread finished; awaiting finish of 157 more threads
+2020-10-14 23:05:42,612 : INFO : EPOCH 1 - PROGRESS: at 2.17% examples, 13707 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:05:42,613 : INFO : worker thread finished; awaiting finish of 156 more threads
+2020-10-14 23:05:42,875 : INFO : worker thread finished; awaiting finish of 155 more threads
+2020-10-14 23:05:43,112 : INFO : worker thread finished; awaiting finish of 154 more threads
+2020-10-14 23:05:43,587 : INFO : worker thread finished; awaiting finish of 153 more threads
+2020-10-14 23:05:44,016 : INFO : EPOCH 1 - PROGRESS: at 4.88% examples, 31850 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:05:44,017 : INFO : worker thread finished; awaiting finish of 152 more threads
+2020-10-14 23:05:44,224 : INFO : worker thread finished; awaiting finish of 151 more threads
+2020-10-14 23:05:44,287 : INFO : worker thread finished; awaiting finish of 150 more threads
+2020-10-14 23:05:44,720 : INFO : worker thread finished; awaiting finish of 149 more threads
+2020-10-14 23:05:44,840 : INFO : worker thread finished; awaiting finish of 148 more threads
+2020-10-14 23:05:44,923 : INFO : worker thread finished; awaiting finish of 147 more threads
+2020-10-14 23:05:44,982 : INFO : worker thread finished; awaiting finish of 146 more threads
+2020-10-14 23:05:44,991 : INFO : worker thread finished; awaiting finish of 145 more threads
+2020-10-14 23:05:44,992 : INFO : worker thread finished; awaiting finish of 144 more threads
+2020-10-14 23:05:45,097 : INFO : EPOCH 1 - PROGRESS: at 10.80% examples, 72480 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:05:45,098 : INFO : worker thread finished; awaiting finish of 143 more threads
+2020-10-14 23:05:45,325 : INFO : worker thread finished; awaiting finish of 142 more threads
+2020-10-14 23:05:45,363 : INFO : worker thread finished; awaiting finish of 141 more threads
+2020-10-14 23:05:45,598 : INFO : worker thread finished; awaiting finish of 140 more threads
+2020-10-14 23:05:45,914 : INFO : worker thread finished; awaiting finish of 139 more threads
+2020-10-14 23:05:45,997 : INFO : worker thread finished; awaiting finish of 138 more threads
+2020-10-14 23:05:46,027 : INFO : worker thread finished; awaiting finish of 137 more threads
+2020-10-14 23:05:46,076 : INFO : worker thread finished; awaiting finish of 136 more threads
+2020-10-14 23:05:46,176 : INFO : EPOCH 1 - PROGRESS: at 15.92% examples, 108226 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:05:46,177 : INFO : worker thread finished; awaiting finish of 135 more threads
+2020-10-14 23:05:46,287 : INFO : worker thread finished; awaiting finish of 134 more threads
+2020-10-14 23:05:46,377 : INFO : worker thread finished; awaiting finish of 133 more threads
+2020-10-14 23:05:46,393 : INFO : worker thread finished; awaiting finish of 132 more threads
+2020-10-14 23:05:46,425 : INFO : worker thread finished; awaiting finish of 131 more threads
+2020-10-14 23:05:46,451 : INFO : worker thread finished; awaiting finish of 130 more threads
+2020-10-14 23:05:46,554 : INFO : worker thread finished; awaiting finish of 129 more threads
+2020-10-14 23:05:46,675 : INFO : worker thread finished; awaiting finish of 128 more threads
+2020-10-14 23:05:46,688 : INFO : worker thread finished; awaiting finish of 127 more threads
+2020-10-14 23:05:46,737 : INFO : worker thread finished; awaiting finish of 126 more threads
+2020-10-14 23:05:46,822 : INFO : worker thread finished; awaiting finish of 125 more threads
+2020-10-14 23:05:46,997 : INFO : worker thread finished; awaiting finish of 124 more threads
+2020-10-14 23:05:47,166 : INFO : worker thread finished; awaiting finish of 123 more threads
+2020-10-14 23:05:47,412 : INFO : EPOCH 1 - PROGRESS: at 24.00% examples, 166052 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:05:47,413 : INFO : worker thread finished; awaiting finish of 122 more threads
+2020-10-14 23:05:47,464 : INFO : worker thread finished; awaiting finish of 121 more threads
+2020-10-14 23:05:47,780 : INFO : worker thread finished; awaiting finish of 120 more threads
+2020-10-14 23:05:48,971 : INFO : EPOCH 1 - PROGRESS: at 25.79% examples, 178358 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:05:48,972 : INFO : worker thread finished; awaiting finish of 119 more threads
+2020-10-14 23:06:40,617 : INFO : EPOCH 1 - PROGRESS: at 26.57% examples, 150424 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:06:40,618 : INFO : worker thread finished; awaiting finish of 118 more threads
+2020-10-14 23:06:41,606 : INFO : worker thread finished; awaiting finish of 117 more threads
+2020-10-14 23:06:41,735 : INFO : EPOCH 1 - PROGRESS: at 27.79% examples, 157129 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:06:41,736 : INFO : worker thread finished; awaiting finish of 116 more threads
+2020-10-14 23:06:41,746 : INFO : worker thread finished; awaiting finish of 115 more threads
+2020-10-14 23:06:42,074 : INFO : worker thread finished; awaiting finish of 114 more threads
+2020-10-14 23:06:42,281 : INFO : worker thread finished; awaiting finish of 113 more threads
+2020-10-14 23:06:42,283 : INFO : worker thread finished; awaiting finish of 112 more threads
+2020-10-14 23:06:42,468 : INFO : worker thread finished; awaiting finish of 111 more threads
+2020-10-14 23:06:42,470 : INFO : worker thread finished; awaiting finish of 110 more threads
+2020-10-14 23:06:43,234 : INFO : EPOCH 1 - PROGRESS: at 32.52% examples, 181765 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:06:43,234 : INFO : worker thread finished; awaiting finish of 109 more threads
+2020-10-14 23:06:43,674 : INFO : worker thread finished; awaiting finish of 108 more threads
+2020-10-14 23:06:43,679 : INFO : worker thread finished; awaiting finish of 107 more threads
+2020-10-14 23:06:44,118 : INFO : worker thread finished; awaiting finish of 106 more threads
+2020-10-14 23:06:44,242 : INFO : EPOCH 1 - PROGRESS: at 35.03% examples, 195649 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:06:44,242 : INFO : worker thread finished; awaiting finish of 105 more threads
+2020-10-14 23:06:44,322 : INFO : worker thread finished; awaiting finish of 104 more threads
+2020-10-14 23:06:44,410 : INFO : worker thread finished; awaiting finish of 103 more threads
+2020-10-14 23:06:44,688 : INFO : worker thread finished; awaiting finish of 102 more threads
+2020-10-14 23:06:44,704 : INFO : worker thread finished; awaiting finish of 101 more threads
+2020-10-14 23:06:44,900 : INFO : worker thread finished; awaiting finish of 100 more threads
+2020-10-14 23:06:45,061 : INFO : worker thread finished; awaiting finish of 99 more threads
+2020-10-14 23:06:45,081 : INFO : worker thread finished; awaiting finish of 98 more threads
+2020-10-14 23:06:45,467 : INFO : EPOCH 1 - PROGRESS: at 40.28% examples, 223731 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:06:45,467 : INFO : worker thread finished; awaiting finish of 97 more threads
+2020-10-14 23:06:45,473 : INFO : worker thread finished; awaiting finish of 96 more threads
+2020-10-14 23:06:45,678 : INFO : worker thread finished; awaiting finish of 95 more threads
+2020-10-14 23:06:46,382 : INFO : worker thread finished; awaiting finish of 94 more threads
+2020-10-14 23:06:46,855 : INFO : EPOCH 1 - PROGRESS: at 42.68% examples, 237066 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:06:46,855 : INFO : worker thread finished; awaiting finish of 93 more threads
+2020-10-14 23:06:48,628 : INFO : EPOCH 1 - PROGRESS: at 43.53% examples, 239235 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:06:48,628 : INFO : worker thread finished; awaiting finish of 92 more threads
+2020-10-14 23:06:49,734 : INFO : EPOCH 1 - PROGRESS: at 44.23% examples, 241914 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:06:49,734 : INFO : worker thread finished; awaiting finish of 91 more threads
+2020-10-14 23:06:50,022 : INFO : worker thread finished; awaiting finish of 90 more threads
+2020-10-14 23:06:50,364 : INFO : worker thread finished; awaiting finish of 89 more threads
+2020-10-14 23:06:50,418 : INFO : worker thread finished; awaiting finish of 88 more threads
+2020-10-14 23:06:50,739 : INFO : EPOCH 1 - PROGRESS: at 46.95% examples, 255301 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:06:50,739 : INFO : worker thread finished; awaiting finish of 87 more threads
+2020-10-14 23:06:50,868 : INFO : worker thread finished; awaiting finish of 86 more threads
+2020-10-14 23:06:50,975 : INFO : worker thread finished; awaiting finish of 85 more threads
+2020-10-14 23:06:51,003 : INFO : worker thread finished; awaiting finish of 84 more threads
+2020-10-14 23:06:51,110 : INFO : worker thread finished; awaiting finish of 83 more threads
+2020-10-14 23:06:51,134 : INFO : worker thread finished; awaiting finish of 82 more threads
+2020-10-14 23:06:51,243 : INFO : worker thread finished; awaiting finish of 81 more threads
+2020-10-14 23:06:51,258 : INFO : worker thread finished; awaiting finish of 80 more threads
+2020-10-14 23:06:51,277 : INFO : worker thread finished; awaiting finish of 79 more threads
+2020-10-14 23:06:51,285 : INFO : worker thread finished; awaiting finish of 78 more threads
+2020-10-14 23:06:51,290 : INFO : worker thread finished; awaiting finish of 77 more threads
+2020-10-14 23:06:51,324 : INFO : worker thread finished; awaiting finish of 76 more threads
+2020-10-14 23:06:51,375 : INFO : worker thread finished; awaiting finish of 75 more threads
+2020-10-14 23:06:51,405 : INFO : worker thread finished; awaiting finish of 74 more threads
+2020-10-14 23:06:51,428 : INFO : worker thread finished; awaiting finish of 73 more threads
+2020-10-14 23:06:51,435 : INFO : worker thread finished; awaiting finish of 72 more threads
+2020-10-14 23:06:51,474 : INFO : worker thread finished; awaiting finish of 71 more threads
+2020-10-14 23:06:51,501 : INFO : worker thread finished; awaiting finish of 70 more threads
+2020-10-14 23:06:51,510 : INFO : worker thread finished; awaiting finish of 69 more threads
+2020-10-14 23:06:51,535 : INFO : worker thread finished; awaiting finish of 68 more threads
+2020-10-14 23:06:51,562 : INFO : worker thread finished; awaiting finish of 67 more threads
+2020-10-14 23:06:51,611 : INFO : worker thread finished; awaiting finish of 66 more threads
+2020-10-14 23:06:51,613 : INFO : worker thread finished; awaiting finish of 65 more threads
+2020-10-14 23:06:51,616 : INFO : worker thread finished; awaiting finish of 64 more threads
+2020-10-14 23:06:51,616 : INFO : worker thread finished; awaiting finish of 63 more threads
+2020-10-14 23:06:51,624 : INFO : worker thread finished; awaiting finish of 62 more threads
+2020-10-14 23:06:51,631 : INFO : worker thread finished; awaiting finish of 61 more threads
+2020-10-14 23:06:51,668 : INFO : worker thread finished; awaiting finish of 60 more threads
+2020-10-14 23:06:51,690 : INFO : worker thread finished; awaiting finish of 59 more threads
+2020-10-14 23:06:51,708 : INFO : worker thread finished; awaiting finish of 58 more threads
+2020-10-14 23:06:51,772 : INFO : EPOCH 1 - PROGRESS: at 66.08% examples, 360281 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:06:51,772 : INFO : worker thread finished; awaiting finish of 57 more threads
+2020-10-14 23:06:51,799 : INFO : worker thread finished; awaiting finish of 56 more threads
+2020-10-14 23:06:51,825 : INFO : worker thread finished; awaiting finish of 55 more threads
+2020-10-14 23:06:51,843 : INFO : worker thread finished; awaiting finish of 54 more threads
+2020-10-14 23:06:51,845 : INFO : worker thread finished; awaiting finish of 53 more threads
+2020-10-14 23:06:51,860 : INFO : worker thread finished; awaiting finish of 52 more threads
+2020-10-14 23:06:51,869 : INFO : worker thread finished; awaiting finish of 51 more threads
+2020-10-14 23:06:51,902 : INFO : worker thread finished; awaiting finish of 50 more threads
+2020-10-14 23:06:51,947 : INFO : worker thread finished; awaiting finish of 49 more threads
+2020-10-14 23:06:51,957 : INFO : worker thread finished; awaiting finish of 48 more threads
+2020-10-14 23:06:51,961 : INFO : worker thread finished; awaiting finish of 47 more threads
+2020-10-14 23:06:51,972 : INFO : worker thread finished; awaiting finish of 46 more threads
+2020-10-14 23:06:51,997 : INFO : worker thread finished; awaiting finish of 45 more threads
+2020-10-14 23:06:52,024 : INFO : worker thread finished; awaiting finish of 44 more threads
+2020-10-14 23:06:52,027 : INFO : worker thread finished; awaiting finish of 43 more threads
+2020-10-14 23:06:52,053 : INFO : worker thread finished; awaiting finish of 42 more threads
+2020-10-14 23:06:52,090 : INFO : worker thread finished; awaiting finish of 41 more threads
+2020-10-14 23:06:52,125 : INFO : worker thread finished; awaiting finish of 40 more threads
+2020-10-14 23:06:52,164 : INFO : worker thread finished; awaiting finish of 39 more threads
+2020-10-14 23:06:52,186 : INFO : worker thread finished; awaiting finish of 38 more threads
+2020-10-14 23:06:52,262 : INFO : worker thread finished; awaiting finish of 37 more threads
+2020-10-14 23:06:52,284 : INFO : worker thread finished; awaiting finish of 36 more threads
+2020-10-14 23:06:52,288 : INFO : worker thread finished; awaiting finish of 35 more threads
+2020-10-14 23:06:52,293 : INFO : worker thread finished; awaiting finish of 34 more threads
+2020-10-14 23:06:52,302 : INFO : worker thread finished; awaiting finish of 33 more threads
+2020-10-14 23:06:52,314 : INFO : worker thread finished; awaiting finish of 32 more threads
+2020-10-14 23:06:52,314 : INFO : worker thread finished; awaiting finish of 31 more threads
+2020-10-14 23:06:52,319 : INFO : worker thread finished; awaiting finish of 30 more threads
+2020-10-14 23:06:52,347 : INFO : worker thread finished; awaiting finish of 29 more threads
+2020-10-14 23:06:52,352 : INFO : worker thread finished; awaiting finish of 28 more threads
+2020-10-14 23:06:52,353 : INFO : worker thread finished; awaiting finish of 27 more threads
+2020-10-14 23:06:52,355 : INFO : worker thread finished; awaiting finish of 26 more threads
+2020-10-14 23:06:52,398 : INFO : worker thread finished; awaiting finish of 25 more threads
+2020-10-14 23:06:52,431 : INFO : worker thread finished; awaiting finish of 24 more threads
+2020-10-14 23:06:52,437 : INFO : worker thread finished; awaiting finish of 23 more threads
+2020-10-14 23:06:52,439 : INFO : worker thread finished; awaiting finish of 22 more threads
+2020-10-14 23:06:52,451 : INFO : worker thread finished; awaiting finish of 21 more threads
+2020-10-14 23:06:52,485 : INFO : worker thread finished; awaiting finish of 20 more threads
+2020-10-14 23:06:52,485 : INFO : worker thread finished; awaiting finish of 19 more threads
+2020-10-14 23:06:52,495 : INFO : worker thread finished; awaiting finish of 18 more threads
+2020-10-14 23:06:52,520 : INFO : worker thread finished; awaiting finish of 17 more threads
+2020-10-14 23:06:52,527 : INFO : worker thread finished; awaiting finish of 16 more threads
+2020-10-14 23:06:52,528 : INFO : worker thread finished; awaiting finish of 15 more threads
+2020-10-14 23:06:52,531 : INFO : worker thread finished; awaiting finish of 14 more threads
+2020-10-14 23:06:52,551 : INFO : worker thread finished; awaiting finish of 13 more threads
+2020-10-14 23:06:52,585 : INFO : worker thread finished; awaiting finish of 12 more threads
+2020-10-14 23:06:52,598 : INFO : worker thread finished; awaiting finish of 11 more threads
+2020-10-14 23:06:52,635 : INFO : worker thread finished; awaiting finish of 10 more threads
+2020-10-14 23:06:52,650 : INFO : worker thread finished; awaiting finish of 9 more threads
+2020-10-14 23:06:52,651 : INFO : worker thread finished; awaiting finish of 8 more threads
+2020-10-14 23:06:52,660 : INFO : worker thread finished; awaiting finish of 7 more threads
+2020-10-14 23:06:52,680 : INFO : worker thread finished; awaiting finish of 6 more threads
+2020-10-14 23:06:52,720 : INFO : worker thread finished; awaiting finish of 5 more threads
+2020-10-14 23:06:52,766 : INFO : worker thread finished; awaiting finish of 4 more threads
+2020-10-14 23:06:52,781 : INFO : EPOCH 1 - PROGRESS: at 98.95% examples, 549165 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:06:52,781 : INFO : worker thread finished; awaiting finish of 3 more threads
+2020-10-14 23:06:52,850 : INFO : worker thread finished; awaiting finish of 2 more threads
+2020-10-14 23:06:52,911 : INFO : worker thread finished; awaiting finish of 1 more threads
+2020-10-14 23:06:52,950 : INFO : worker thread finished; awaiting finish of 0 more threads
+2020-10-14 23:06:52,950 : INFO : EPOCH - 1 : training on 171182409 raw words (169940335 effective words) took 303.8s, 559426 effective words/s
+2020-10-14 23:06:52,954 : INFO : Epoch: 01 | Loss: 42,060,300.00
+2020-10-14 23:10:56,617 : INFO : EPOCH 2 - PROGRESS: at 0.78% examples, 4398 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:10:56,620 : INFO : worker thread finished; awaiting finish of 158 more threads
+2020-10-14 23:11:00,147 : INFO : EPOCH 2 - PROGRESS: at 1.33% examples, 8632 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:11:00,182 : INFO : worker thread finished; awaiting finish of 157 more threads
+2020-10-14 23:11:00,936 : INFO : worker thread finished; awaiting finish of 156 more threads
+2020-10-14 23:11:02,177 : INFO : EPOCH 2 - PROGRESS: at 2.59% examples, 17122 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:11:02,178 : INFO : worker thread finished; awaiting finish of 155 more threads
+2020-10-14 23:11:02,195 : INFO : worker thread finished; awaiting finish of 154 more threads
+2020-10-14 23:11:02,285 : INFO : worker thread finished; awaiting finish of 153 more threads
+2020-10-14 23:11:02,531 : INFO : worker thread finished; awaiting finish of 152 more threads
+2020-10-14 23:11:02,652 : INFO : worker thread finished; awaiting finish of 151 more threads
+2020-10-14 23:11:02,882 : INFO : worker thread finished; awaiting finish of 150 more threads
+2020-10-14 23:11:02,898 : INFO : worker thread finished; awaiting finish of 149 more threads
+2020-10-14 23:11:02,928 : INFO : worker thread finished; awaiting finish of 148 more threads
+2020-10-14 23:11:02,998 : INFO : worker thread finished; awaiting finish of 147 more threads
+2020-10-14 23:11:03,073 : INFO : worker thread finished; awaiting finish of 146 more threads
+2020-10-14 23:11:03,145 : INFO : worker thread finished; awaiting finish of 145 more threads
+2020-10-14 23:11:03,158 : INFO : worker thread finished; awaiting finish of 144 more threads
+2020-10-14 23:11:03,165 : INFO : worker thread finished; awaiting finish of 143 more threads
+2020-10-14 23:11:03,256 : INFO : EPOCH 2 - PROGRESS: at 10.67% examples, 72545 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:11:03,256 : INFO : worker thread finished; awaiting finish of 142 more threads
+2020-10-14 23:11:03,343 : INFO : worker thread finished; awaiting finish of 141 more threads
+2020-10-14 23:11:03,414 : INFO : worker thread finished; awaiting finish of 140 more threads
+2020-10-14 23:11:03,449 : INFO : worker thread finished; awaiting finish of 139 more threads
+2020-10-14 23:11:03,542 : INFO : worker thread finished; awaiting finish of 138 more threads
+2020-10-14 23:11:03,877 : INFO : worker thread finished; awaiting finish of 137 more threads
+2020-10-14 23:11:04,094 : INFO : worker thread finished; awaiting finish of 136 more threads
+2020-10-14 23:11:04,166 : INFO : worker thread finished; awaiting finish of 135 more threads
+2020-10-14 23:11:04,232 : INFO : worker thread finished; awaiting finish of 134 more threads
+2020-10-14 23:11:04,322 : INFO : EPOCH 2 - PROGRESS: at 15.95% examples, 110566 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:11:04,322 : INFO : worker thread finished; awaiting finish of 133 more threads
+2020-10-14 23:11:04,472 : INFO : worker thread finished; awaiting finish of 132 more threads
+2020-10-14 23:11:04,598 : INFO : worker thread finished; awaiting finish of 131 more threads
+2020-10-14 23:11:04,697 : INFO : worker thread finished; awaiting finish of 130 more threads
+2020-10-14 23:11:04,876 : INFO : worker thread finished; awaiting finish of 129 more threads
+2020-10-14 23:11:04,905 : INFO : worker thread finished; awaiting finish of 128 more threads
+2020-10-14 23:11:04,940 : INFO : worker thread finished; awaiting finish of 127 more threads
+2020-10-14 23:11:04,961 : INFO : worker thread finished; awaiting finish of 126 more threads
+2020-10-14 23:11:05,017 : INFO : worker thread finished; awaiting finish of 125 more threads
+2020-10-14 23:11:05,072 : INFO : worker thread finished; awaiting finish of 124 more threads
+2020-10-14 23:11:05,181 : INFO : worker thread finished; awaiting finish of 123 more threads
+2020-10-14 23:11:05,557 : INFO : EPOCH 2 - PROGRESS: at 22.22% examples, 156690 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:11:05,558 : INFO : worker thread finished; awaiting finish of 122 more threads
+2020-10-14 23:11:05,630 : INFO : worker thread finished; awaiting finish of 121 more threads
+2020-10-14 23:11:11,764 : INFO : EPOCH 2 - PROGRESS: at 23.33% examples, 161208 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:11:11,764 : INFO : worker thread finished; awaiting finish of 120 more threads
+2020-10-14 23:11:12,601 : INFO : worker thread finished; awaiting finish of 119 more threads
+2020-10-14 23:12:00,999 : INFO : EPOCH 2 - PROGRESS: at 24.63% examples, 142335 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:12:01,014 : INFO : worker thread finished; awaiting finish of 118 more threads
+2020-10-14 23:12:08,074 : INFO : EPOCH 2 - PROGRESS: at 25.37% examples, 142532 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:12:08,075 : INFO : worker thread finished; awaiting finish of 117 more threads
+2020-10-14 23:12:08,260 : INFO : worker thread finished; awaiting finish of 116 more threads
+2020-10-14 23:12:09,860 : INFO : EPOCH 2 - PROGRESS: at 26.65% examples, 148458 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:12:09,860 : INFO : worker thread finished; awaiting finish of 115 more threads
+2020-10-14 23:12:09,978 : INFO : worker thread finished; awaiting finish of 114 more threads
+2020-10-14 23:12:10,127 : INFO : worker thread finished; awaiting finish of 113 more threads
+2020-10-14 23:12:10,348 : INFO : worker thread finished; awaiting finish of 112 more threads
+2020-10-14 23:12:10,503 : INFO : worker thread finished; awaiting finish of 111 more threads
+2020-10-14 23:12:10,682 : INFO : worker thread finished; awaiting finish of 110 more threads
+2020-10-14 23:12:10,722 : INFO : worker thread finished; awaiting finish of 109 more threads
+2020-10-14 23:12:11,157 : INFO : EPOCH 2 - PROGRESS: at 31.52% examples, 171418 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:12:11,158 : INFO : worker thread finished; awaiting finish of 108 more threads
+2020-10-14 23:12:11,168 : INFO : worker thread finished; awaiting finish of 107 more threads
+2020-10-14 23:12:11,417 : INFO : worker thread finished; awaiting finish of 106 more threads
+2020-10-14 23:12:11,727 : INFO : worker thread finished; awaiting finish of 105 more threads
+2020-10-14 23:12:12,041 : INFO : worker thread finished; awaiting finish of 104 more threads
+2020-10-14 23:12:12,115 : INFO : worker thread finished; awaiting finish of 103 more threads
+2020-10-14 23:12:12,357 : INFO : EPOCH 2 - PROGRESS: at 35.50% examples, 190867 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:12:12,357 : INFO : worker thread finished; awaiting finish of 102 more threads
+2020-10-14 23:12:12,557 : INFO : worker thread finished; awaiting finish of 101 more threads
+2020-10-14 23:12:12,570 : INFO : worker thread finished; awaiting finish of 100 more threads
+2020-10-14 23:12:12,807 : INFO : worker thread finished; awaiting finish of 99 more threads
+2020-10-14 23:12:12,818 : INFO : worker thread finished; awaiting finish of 98 more threads
+2020-10-14 23:12:13,098 : INFO : worker thread finished; awaiting finish of 97 more threads
+2020-10-14 23:12:13,118 : INFO : worker thread finished; awaiting finish of 96 more threads
+2020-10-14 23:12:13,203 : INFO : worker thread finished; awaiting finish of 95 more threads
+2020-10-14 23:12:13,222 : INFO : worker thread finished; awaiting finish of 94 more threads
+2020-10-14 23:12:13,247 : INFO : worker thread finished; awaiting finish of 93 more threads
+2020-10-14 23:12:13,269 : INFO : worker thread finished; awaiting finish of 92 more threads
+2020-10-14 23:12:13,271 : INFO : worker thread finished; awaiting finish of 91 more threads
+2020-10-14 23:12:13,335 : INFO : worker thread finished; awaiting finish of 90 more threads
+2020-10-14 23:12:13,384 : INFO : EPOCH 2 - PROGRESS: at 43.81% examples, 233685 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:12:13,384 : INFO : worker thread finished; awaiting finish of 89 more threads
+2020-10-14 23:12:13,414 : INFO : worker thread finished; awaiting finish of 88 more threads
+2020-10-14 23:12:13,431 : INFO : worker thread finished; awaiting finish of 87 more threads
+2020-10-14 23:12:13,585 : INFO : worker thread finished; awaiting finish of 86 more threads
+2020-10-14 23:12:13,694 : INFO : worker thread finished; awaiting finish of 85 more threads
+2020-10-14 23:12:13,896 : INFO : worker thread finished; awaiting finish of 84 more threads
+2020-10-14 23:12:13,929 : INFO : worker thread finished; awaiting finish of 83 more threads
+2020-10-14 23:12:14,111 : INFO : worker thread finished; awaiting finish of 82 more threads
+2020-10-14 23:12:14,113 : INFO : worker thread finished; awaiting finish of 81 more threads
+2020-10-14 23:12:14,121 : INFO : worker thread finished; awaiting finish of 80 more threads
+2020-10-14 23:12:14,140 : INFO : worker thread finished; awaiting finish of 79 more threads
+2020-10-14 23:12:14,232 : INFO : worker thread finished; awaiting finish of 78 more threads
+2020-10-14 23:12:14,273 : INFO : worker thread finished; awaiting finish of 77 more threads
+2020-10-14 23:12:14,282 : INFO : worker thread finished; awaiting finish of 76 more threads
+2020-10-14 23:12:14,331 : INFO : worker thread finished; awaiting finish of 75 more threads
+2020-10-14 23:12:14,335 : INFO : worker thread finished; awaiting finish of 74 more threads
+2020-10-14 23:12:14,350 : INFO : worker thread finished; awaiting finish of 73 more threads
+2020-10-14 23:12:14,416 : INFO : EPOCH 2 - PROGRESS: at 54.52% examples, 289555 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:12:14,417 : INFO : worker thread finished; awaiting finish of 72 more threads
+2020-10-14 23:12:14,451 : INFO : worker thread finished; awaiting finish of 71 more threads
+2020-10-14 23:12:14,527 : INFO : worker thread finished; awaiting finish of 70 more threads
+2020-10-14 23:12:14,536 : INFO : worker thread finished; awaiting finish of 69 more threads
+2020-10-14 23:12:14,642 : INFO : worker thread finished; awaiting finish of 68 more threads
+2020-10-14 23:12:14,729 : INFO : worker thread finished; awaiting finish of 67 more threads
+2020-10-14 23:12:14,779 : INFO : worker thread finished; awaiting finish of 66 more threads
+2020-10-14 23:12:14,849 : INFO : worker thread finished; awaiting finish of 65 more threads
+2020-10-14 23:12:14,853 : INFO : worker thread finished; awaiting finish of 64 more threads
+2020-10-14 23:12:14,870 : INFO : worker thread finished; awaiting finish of 63 more threads
+2020-10-14 23:12:14,906 : INFO : worker thread finished; awaiting finish of 62 more threads
+2020-10-14 23:12:14,948 : INFO : worker thread finished; awaiting finish of 61 more threads
+2020-10-14 23:12:15,218 : INFO : worker thread finished; awaiting finish of 60 more threads
+2020-10-14 23:12:15,581 : INFO : EPOCH 2 - PROGRESS: at 62.73% examples, 331550 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:12:15,581 : INFO : worker thread finished; awaiting finish of 59 more threads
+2020-10-14 23:12:15,956 : INFO : worker thread finished; awaiting finish of 58 more threads
+2020-10-14 23:12:16,256 : INFO : worker thread finished; awaiting finish of 57 more threads
+2020-10-14 23:12:16,343 : INFO : worker thread finished; awaiting finish of 56 more threads
+2020-10-14 23:12:16,586 : INFO : EPOCH 2 - PROGRESS: at 65.26% examples, 343698 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:12:16,586 : INFO : worker thread finished; awaiting finish of 55 more threads
+2020-10-14 23:12:16,745 : INFO : worker thread finished; awaiting finish of 54 more threads
+2020-10-14 23:12:16,782 : INFO : worker thread finished; awaiting finish of 53 more threads
+2020-10-14 23:12:16,797 : INFO : worker thread finished; awaiting finish of 52 more threads
+2020-10-14 23:12:16,798 : INFO : worker thread finished; awaiting finish of 51 more threads
+2020-10-14 23:12:16,917 : INFO : worker thread finished; awaiting finish of 50 more threads
+2020-10-14 23:12:16,958 : INFO : worker thread finished; awaiting finish of 49 more threads
+2020-10-14 23:12:17,021 : INFO : worker thread finished; awaiting finish of 48 more threads
+2020-10-14 23:12:17,040 : INFO : worker thread finished; awaiting finish of 47 more threads
+2020-10-14 23:12:17,114 : INFO : worker thread finished; awaiting finish of 46 more threads
+2020-10-14 23:12:17,115 : INFO : worker thread finished; awaiting finish of 45 more threads
+2020-10-14 23:12:17,215 : INFO : worker thread finished; awaiting finish of 44 more threads
+2020-10-14 23:12:17,253 : INFO : worker thread finished; awaiting finish of 43 more threads
+2020-10-14 23:12:17,301 : INFO : worker thread finished; awaiting finish of 42 more threads
+2020-10-14 23:12:17,304 : INFO : worker thread finished; awaiting finish of 41 more threads
+2020-10-14 23:12:17,322 : INFO : worker thread finished; awaiting finish of 40 more threads
+2020-10-14 23:12:17,322 : INFO : worker thread finished; awaiting finish of 39 more threads
+2020-10-14 23:12:17,328 : INFO : worker thread finished; awaiting finish of 38 more threads
+2020-10-14 23:12:17,363 : INFO : worker thread finished; awaiting finish of 37 more threads
+2020-10-14 23:12:17,433 : INFO : worker thread finished; awaiting finish of 36 more threads
+2020-10-14 23:12:17,463 : INFO : worker thread finished; awaiting finish of 35 more threads
+2020-10-14 23:12:17,542 : INFO : worker thread finished; awaiting finish of 34 more threads
+2020-10-14 23:12:17,576 : INFO : worker thread finished; awaiting finish of 33 more threads
+2020-10-14 23:12:17,610 : INFO : EPOCH 2 - PROGRESS: at 80.30% examples, 418475 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:12:17,610 : INFO : worker thread finished; awaiting finish of 32 more threads
+2020-10-14 23:12:17,625 : INFO : worker thread finished; awaiting finish of 31 more threads
+2020-10-14 23:12:17,632 : INFO : worker thread finished; awaiting finish of 30 more threads
+2020-10-14 23:12:17,641 : INFO : worker thread finished; awaiting finish of 29 more threads
+2020-10-14 23:12:17,712 : INFO : worker thread finished; awaiting finish of 28 more threads
+2020-10-14 23:12:17,752 : INFO : worker thread finished; awaiting finish of 27 more threads
+2020-10-14 23:12:17,760 : INFO : worker thread finished; awaiting finish of 26 more threads
+2020-10-14 23:12:17,785 : INFO : worker thread finished; awaiting finish of 25 more threads
+2020-10-14 23:12:17,797 : INFO : worker thread finished; awaiting finish of 24 more threads
+2020-10-14 23:12:17,820 : INFO : worker thread finished; awaiting finish of 23 more threads
+2020-10-14 23:12:17,833 : INFO : worker thread finished; awaiting finish of 22 more threads
+2020-10-14 23:12:17,844 : INFO : worker thread finished; awaiting finish of 21 more threads
+2020-10-14 23:12:17,856 : INFO : worker thread finished; awaiting finish of 20 more threads
+2020-10-14 23:12:17,858 : INFO : worker thread finished; awaiting finish of 19 more threads
+2020-10-14 23:12:17,884 : INFO : worker thread finished; awaiting finish of 18 more threads
+2020-10-14 23:12:17,936 : INFO : worker thread finished; awaiting finish of 17 more threads
+2020-10-14 23:12:17,945 : INFO : worker thread finished; awaiting finish of 16 more threads
+2020-10-14 23:12:17,953 : INFO : worker thread finished; awaiting finish of 15 more threads
+2020-10-14 23:12:17,957 : INFO : worker thread finished; awaiting finish of 14 more threads
+2020-10-14 23:12:18,009 : INFO : worker thread finished; awaiting finish of 13 more threads
+2020-10-14 23:12:18,051 : INFO : worker thread finished; awaiting finish of 12 more threads
+2020-10-14 23:12:18,092 : INFO : worker thread finished; awaiting finish of 11 more threads
+2020-10-14 23:12:18,098 : INFO : worker thread finished; awaiting finish of 10 more threads
+2020-10-14 23:12:18,117 : INFO : worker thread finished; awaiting finish of 9 more threads
+2020-10-14 23:12:18,127 : INFO : worker thread finished; awaiting finish of 8 more threads
+2020-10-14 23:12:18,139 : INFO : worker thread finished; awaiting finish of 7 more threads
+2020-10-14 23:12:18,191 : INFO : worker thread finished; awaiting finish of 6 more threads
+2020-10-14 23:12:18,242 : INFO : worker thread finished; awaiting finish of 5 more threads
+2020-10-14 23:12:18,339 : INFO : worker thread finished; awaiting finish of 4 more threads
+2020-10-14 23:12:18,415 : INFO : worker thread finished; awaiting finish of 3 more threads
+2020-10-14 23:12:18,424 : INFO : worker thread finished; awaiting finish of 2 more threads
+2020-10-14 23:12:18,435 : INFO : worker thread finished; awaiting finish of 1 more threads
+2020-10-14 23:12:18,471 : INFO : worker thread finished; awaiting finish of 0 more threads
+2020-10-14 23:12:18,471 : INFO : EPOCH - 2 : training on 171182409 raw words (169940335 effective words) took 325.1s, 522677 effective words/s
+2020-10-14 23:12:18,474 : INFO : Epoch: 02 | Loss: 25,049,372.00
+2020-10-14 23:16:25,404 : INFO : EPOCH 3 - PROGRESS: at 0.82% examples, 4341 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:16:25,406 : INFO : worker thread finished; awaiting finish of 158 more threads
+2020-10-14 23:16:27,178 : INFO : EPOCH 3 - PROGRESS: at 1.56% examples, 8619 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:16:27,179 : INFO : worker thread finished; awaiting finish of 157 more threads
+2020-10-14 23:16:28,743 : INFO : EPOCH 3 - PROGRESS: at 2.29% examples, 12848 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:16:28,744 : INFO : worker thread finished; awaiting finish of 156 more threads
+2020-10-14 23:16:28,747 : INFO : worker thread finished; awaiting finish of 155 more threads
+2020-10-14 23:16:29,094 : INFO : worker thread finished; awaiting finish of 154 more threads
+2020-10-14 23:16:29,563 : INFO : worker thread finished; awaiting finish of 153 more threads
+2020-10-14 23:16:29,656 : INFO : worker thread finished; awaiting finish of 152 more threads
+2020-10-14 23:16:29,687 : INFO : worker thread finished; awaiting finish of 151 more threads
+2020-10-14 23:16:29,851 : INFO : EPOCH 3 - PROGRESS: at 6.41% examples, 38375 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:16:29,851 : INFO : worker thread finished; awaiting finish of 150 more threads
+2020-10-14 23:16:30,332 : INFO : worker thread finished; awaiting finish of 149 more threads
+2020-10-14 23:16:30,552 : INFO : worker thread finished; awaiting finish of 148 more threads
+2020-10-14 23:16:30,617 : INFO : worker thread finished; awaiting finish of 147 more threads
+2020-10-14 23:16:30,700 : INFO : worker thread finished; awaiting finish of 146 more threads
+2020-10-14 23:16:30,804 : INFO : worker thread finished; awaiting finish of 145 more threads
+2020-10-14 23:16:30,939 : INFO : EPOCH 3 - PROGRESS: at 10.53% examples, 63682 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:16:30,939 : INFO : worker thread finished; awaiting finish of 144 more threads
+2020-10-14 23:16:31,213 : INFO : worker thread finished; awaiting finish of 143 more threads
+2020-10-14 23:16:31,466 : INFO : worker thread finished; awaiting finish of 142 more threads
+2020-10-14 23:16:31,497 : INFO : worker thread finished; awaiting finish of 141 more threads
+2020-10-14 23:16:31,551 : INFO : worker thread finished; awaiting finish of 140 more threads
+2020-10-14 23:16:31,559 : INFO : worker thread finished; awaiting finish of 139 more threads
+2020-10-14 23:16:31,588 : INFO : worker thread finished; awaiting finish of 138 more threads
+2020-10-14 23:16:31,947 : INFO : EPOCH 3 - PROGRESS: at 14.95% examples, 92989 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:16:31,947 : INFO : worker thread finished; awaiting finish of 137 more threads
+2020-10-14 23:16:31,987 : INFO : worker thread finished; awaiting finish of 136 more threads
+2020-10-14 23:16:32,005 : INFO : worker thread finished; awaiting finish of 135 more threads
+2020-10-14 23:16:32,074 : INFO : worker thread finished; awaiting finish of 134 more threads
+2020-10-14 23:16:32,183 : INFO : worker thread finished; awaiting finish of 133 more threads
+2020-10-14 23:16:32,188 : INFO : worker thread finished; awaiting finish of 132 more threads
+2020-10-14 23:16:32,205 : INFO : worker thread finished; awaiting finish of 131 more threads
+2020-10-14 23:16:32,213 : INFO : worker thread finished; awaiting finish of 130 more threads
+2020-10-14 23:16:32,270 : INFO : worker thread finished; awaiting finish of 129 more threads
+2020-10-14 23:16:32,289 : INFO : worker thread finished; awaiting finish of 128 more threads
+2020-10-14 23:16:32,364 : INFO : worker thread finished; awaiting finish of 127 more threads
+2020-10-14 23:16:33,031 : INFO : EPOCH 3 - PROGRESS: at 21.91% examples, 138909 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:16:33,031 : INFO : worker thread finished; awaiting finish of 126 more threads
+2020-10-14 23:16:33,080 : INFO : worker thread finished; awaiting finish of 125 more threads
+2020-10-14 23:16:33,115 : INFO : worker thread finished; awaiting finish of 124 more threads
+2020-10-14 23:16:33,356 : INFO : worker thread finished; awaiting finish of 123 more threads
+2020-10-14 23:16:33,484 : INFO : worker thread finished; awaiting finish of 122 more threads
+2020-10-14 23:16:33,636 : INFO : worker thread finished; awaiting finish of 121 more threads
+2020-10-14 23:16:34,079 : INFO : EPOCH 3 - PROGRESS: at 25.49% examples, 163498 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:16:34,079 : INFO : worker thread finished; awaiting finish of 120 more threads
+2020-10-14 23:16:39,431 : INFO : EPOCH 3 - PROGRESS: at 26.11% examples, 164246 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:16:39,431 : INFO : worker thread finished; awaiting finish of 119 more threads
+2020-10-14 23:16:39,742 : INFO : worker thread finished; awaiting finish of 118 more threads
+2020-10-14 23:16:40,354 : INFO : worker thread finished; awaiting finish of 117 more threads
+2020-10-14 23:16:42,527 : INFO : EPOCH 3 - PROGRESS: at 28.48% examples, 174494 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:16:42,527 : INFO : worker thread finished; awaiting finish of 116 more threads
+2020-10-14 23:16:42,643 : INFO : worker thread finished; awaiting finish of 115 more threads
+2020-10-14 23:16:42,808 : INFO : worker thread finished; awaiting finish of 114 more threads
+2020-10-14 23:16:43,186 : INFO : worker thread finished; awaiting finish of 113 more threads
+2020-10-14 23:16:43,687 : INFO : EPOCH 3 - PROGRESS: at 31.04% examples, 189818 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:16:43,688 : INFO : worker thread finished; awaiting finish of 112 more threads
+2020-10-14 23:16:43,713 : INFO : worker thread finished; awaiting finish of 111 more threads
+2020-10-14 23:16:43,901 : INFO : worker thread finished; awaiting finish of 110 more threads
+2020-10-14 23:16:44,063 : INFO : worker thread finished; awaiting finish of 109 more threads
+2020-10-14 23:16:44,150 : INFO : worker thread finished; awaiting finish of 108 more threads
+2020-10-14 23:16:44,222 : INFO : worker thread finished; awaiting finish of 107 more threads
+2020-10-14 23:16:44,379 : INFO : worker thread finished; awaiting finish of 106 more threads
+2020-10-14 23:16:44,418 : INFO : worker thread finished; awaiting finish of 105 more threads
+2020-10-14 23:16:44,502 : INFO : worker thread finished; awaiting finish of 104 more threads
+2020-10-14 23:16:44,796 : INFO : EPOCH 3 - PROGRESS: at 36.55% examples, 225132 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:16:44,796 : INFO : worker thread finished; awaiting finish of 103 more threads
+2020-10-14 23:16:44,807 : INFO : worker thread finished; awaiting finish of 102 more threads
+2020-10-14 23:16:44,883 : INFO : worker thread finished; awaiting finish of 101 more threads
+2020-10-14 23:16:44,928 : INFO : worker thread finished; awaiting finish of 100 more threads
+2020-10-14 23:16:44,952 : INFO : worker thread finished; awaiting finish of 99 more threads
+2020-10-14 23:16:45,013 : INFO : worker thread finished; awaiting finish of 98 more threads
+2020-10-14 23:16:45,034 : INFO : worker thread finished; awaiting finish of 97 more threads
+2020-10-14 23:16:45,120 : INFO : worker thread finished; awaiting finish of 96 more threads
+2020-10-14 23:16:45,169 : INFO : worker thread finished; awaiting finish of 95 more threads
+2020-10-14 23:16:45,214 : INFO : worker thread finished; awaiting finish of 94 more threads
+2020-10-14 23:16:45,220 : INFO : worker thread finished; awaiting finish of 93 more threads
+2020-10-14 23:16:45,276 : INFO : worker thread finished; awaiting finish of 92 more threads
+2020-10-14 23:16:45,300 : INFO : worker thread finished; awaiting finish of 91 more threads
+2020-10-14 23:16:45,514 : INFO : worker thread finished; awaiting finish of 90 more threads
+2020-10-14 23:16:45,550 : INFO : worker thread finished; awaiting finish of 89 more threads
+2020-10-14 23:16:45,563 : INFO : worker thread finished; awaiting finish of 88 more threads
+2020-10-14 23:16:45,585 : INFO : worker thread finished; awaiting finish of 87 more threads
+2020-10-14 23:16:45,645 : INFO : worker thread finished; awaiting finish of 86 more threads
+2020-10-14 23:16:45,771 : INFO : worker thread finished; awaiting finish of 85 more threads
+2020-10-14 23:16:45,806 : INFO : EPOCH 3 - PROGRESS: at 48.27% examples, 300376 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:16:45,806 : INFO : worker thread finished; awaiting finish of 84 more threads
+2020-10-14 23:16:46,019 : INFO : worker thread finished; awaiting finish of 83 more threads
+2020-10-14 23:16:46,024 : INFO : worker thread finished; awaiting finish of 82 more threads
+2020-10-14 23:16:46,089 : INFO : worker thread finished; awaiting finish of 81 more threads
+2020-10-14 23:16:46,630 : INFO : worker thread finished; awaiting finish of 80 more threads
+2020-10-14 23:16:46,917 : INFO : EPOCH 3 - PROGRESS: at 51.36% examples, 319056 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:16:46,918 : INFO : worker thread finished; awaiting finish of 79 more threads
+2020-10-14 23:16:46,983 : INFO : worker thread finished; awaiting finish of 78 more threads
+2020-10-14 23:16:47,196 : INFO : worker thread finished; awaiting finish of 77 more threads
+2020-10-14 23:16:47,496 : INFO : worker thread finished; awaiting finish of 76 more threads
+2020-10-14 23:16:47,611 : INFO : worker thread finished; awaiting finish of 75 more threads
+2020-10-14 23:16:47,678 : INFO : worker thread finished; awaiting finish of 74 more threads
+2020-10-14 23:16:47,737 : INFO : worker thread finished; awaiting finish of 73 more threads
+2020-10-14 23:16:47,816 : INFO : worker thread finished; awaiting finish of 72 more threads
+2020-10-14 23:16:47,820 : INFO : worker thread finished; awaiting finish of 71 more threads
+2020-10-14 23:16:47,839 : INFO : worker thread finished; awaiting finish of 70 more threads
+2020-10-14 23:16:47,944 : INFO : EPOCH 3 - PROGRESS: at 58.05% examples, 357573 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:16:47,944 : INFO : worker thread finished; awaiting finish of 69 more threads
+2020-10-14 23:16:47,968 : INFO : worker thread finished; awaiting finish of 68 more threads
+2020-10-14 23:16:48,002 : INFO : worker thread finished; awaiting finish of 67 more threads
+2020-10-14 23:16:48,019 : INFO : worker thread finished; awaiting finish of 66 more threads
+2020-10-14 23:16:48,024 : INFO : worker thread finished; awaiting finish of 65 more threads
+2020-10-14 23:16:48,112 : INFO : worker thread finished; awaiting finish of 64 more threads
+2020-10-14 23:16:48,141 : INFO : worker thread finished; awaiting finish of 63 more threads
+2020-10-14 23:16:48,161 : INFO : worker thread finished; awaiting finish of 62 more threads
+2020-10-14 23:16:48,172 : INFO : worker thread finished; awaiting finish of 61 more threads
+2020-10-14 23:16:48,271 : INFO : worker thread finished; awaiting finish of 60 more threads
+2020-10-14 23:16:48,283 : INFO : worker thread finished; awaiting finish of 59 more threads
+2020-10-14 23:16:48,309 : INFO : worker thread finished; awaiting finish of 58 more threads
+2020-10-14 23:16:48,345 : INFO : worker thread finished; awaiting finish of 57 more threads
+2020-10-14 23:16:48,349 : INFO : worker thread finished; awaiting finish of 56 more threads
+2020-10-14 23:16:48,358 : INFO : worker thread finished; awaiting finish of 55 more threads
+2020-10-14 23:16:48,375 : INFO : worker thread finished; awaiting finish of 54 more threads
+2020-10-14 23:16:48,377 : INFO : worker thread finished; awaiting finish of 53 more threads
+2020-10-14 23:16:48,398 : INFO : worker thread finished; awaiting finish of 52 more threads
+2020-10-14 23:16:48,404 : INFO : worker thread finished; awaiting finish of 51 more threads
+2020-10-14 23:16:48,410 : INFO : worker thread finished; awaiting finish of 50 more threads
+2020-10-14 23:16:48,450 : INFO : worker thread finished; awaiting finish of 49 more threads
+2020-10-14 23:16:48,458 : INFO : worker thread finished; awaiting finish of 48 more threads
+2020-10-14 23:16:48,462 : INFO : worker thread finished; awaiting finish of 47 more threads
+2020-10-14 23:16:48,481 : INFO : worker thread finished; awaiting finish of 46 more threads
+2020-10-14 23:16:48,491 : INFO : worker thread finished; awaiting finish of 45 more threads
+2020-10-14 23:16:48,520 : INFO : worker thread finished; awaiting finish of 44 more threads
+2020-10-14 23:16:48,544 : INFO : worker thread finished; awaiting finish of 43 more threads
+2020-10-14 23:16:48,568 : INFO : worker thread finished; awaiting finish of 42 more threads
+2020-10-14 23:16:48,610 : INFO : worker thread finished; awaiting finish of 41 more threads
+2020-10-14 23:16:48,640 : INFO : worker thread finished; awaiting finish of 40 more threads
+2020-10-14 23:16:48,668 : INFO : worker thread finished; awaiting finish of 39 more threads
+2020-10-14 23:16:48,671 : INFO : worker thread finished; awaiting finish of 38 more threads
+2020-10-14 23:16:48,674 : INFO : worker thread finished; awaiting finish of 37 more threads
+2020-10-14 23:16:48,711 : INFO : worker thread finished; awaiting finish of 36 more threads
+2020-10-14 23:16:48,744 : INFO : worker thread finished; awaiting finish of 35 more threads
+2020-10-14 23:16:48,747 : INFO : worker thread finished; awaiting finish of 34 more threads
+2020-10-14 23:16:48,765 : INFO : worker thread finished; awaiting finish of 33 more threads
+2020-10-14 23:16:48,767 : INFO : worker thread finished; awaiting finish of 32 more threads
+2020-10-14 23:16:48,784 : INFO : worker thread finished; awaiting finish of 31 more threads
+2020-10-14 23:16:48,798 : INFO : worker thread finished; awaiting finish of 30 more threads
+2020-10-14 23:16:48,801 : INFO : worker thread finished; awaiting finish of 29 more threads
+2020-10-14 23:16:48,812 : INFO : worker thread finished; awaiting finish of 28 more threads
+2020-10-14 23:16:48,817 : INFO : worker thread finished; awaiting finish of 27 more threads
+2020-10-14 23:16:48,842 : INFO : worker thread finished; awaiting finish of 26 more threads
+2020-10-14 23:16:48,862 : INFO : worker thread finished; awaiting finish of 25 more threads
+2020-10-14 23:16:48,873 : INFO : worker thread finished; awaiting finish of 24 more threads
+2020-10-14 23:16:48,885 : INFO : worker thread finished; awaiting finish of 23 more threads
+2020-10-14 23:16:48,893 : INFO : worker thread finished; awaiting finish of 22 more threads
+2020-10-14 23:16:48,909 : INFO : worker thread finished; awaiting finish of 21 more threads
+2020-10-14 23:16:48,920 : INFO : worker thread finished; awaiting finish of 20 more threads
+2020-10-14 23:16:48,928 : INFO : worker thread finished; awaiting finish of 19 more threads
+2020-10-14 23:16:48,935 : INFO : worker thread finished; awaiting finish of 18 more threads
+2020-10-14 23:16:48,943 : INFO : worker thread finished; awaiting finish of 17 more threads
+2020-10-14 23:16:48,957 : INFO : EPOCH 3 - PROGRESS: at 91.71% examples, 565936 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:16:48,958 : INFO : worker thread finished; awaiting finish of 16 more threads
+2020-10-14 23:16:48,969 : INFO : worker thread finished; awaiting finish of 15 more threads
+2020-10-14 23:16:49,053 : INFO : worker thread finished; awaiting finish of 14 more threads
+2020-10-14 23:16:49,107 : INFO : worker thread finished; awaiting finish of 13 more threads
+2020-10-14 23:16:49,125 : INFO : worker thread finished; awaiting finish of 12 more threads
+2020-10-14 23:16:49,165 : INFO : worker thread finished; awaiting finish of 11 more threads
+2020-10-14 23:16:49,188 : INFO : worker thread finished; awaiting finish of 10 more threads
+2020-10-14 23:16:49,213 : INFO : worker thread finished; awaiting finish of 9 more threads
+2020-10-14 23:16:49,239 : INFO : worker thread finished; awaiting finish of 8 more threads
+2020-10-14 23:16:49,316 : INFO : worker thread finished; awaiting finish of 7 more threads
+2020-10-14 23:16:49,331 : INFO : worker thread finished; awaiting finish of 6 more threads
+2020-10-14 23:16:49,346 : INFO : worker thread finished; awaiting finish of 5 more threads
+2020-10-14 23:16:49,371 : INFO : worker thread finished; awaiting finish of 4 more threads
+2020-10-14 23:16:49,380 : INFO : worker thread finished; awaiting finish of 3 more threads
+2020-10-14 23:16:49,403 : INFO : worker thread finished; awaiting finish of 2 more threads
+2020-10-14 23:16:49,457 : INFO : worker thread finished; awaiting finish of 1 more threads
+2020-10-14 23:16:49,504 : INFO : worker thread finished; awaiting finish of 0 more threads
+2020-10-14 23:16:49,504 : INFO : EPOCH - 3 : training on 171182409 raw words (169940335 effective words) took 270.6s, 628023 effective words/s
+2020-10-14 23:16:49,508 : INFO : Epoch: 03 | Loss: 7,256.00
+2020-10-14 23:20:39,484 : INFO : EPOCH 4 - PROGRESS: at 0.58% examples, 4620 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:20:39,486 : INFO : worker thread finished; awaiting finish of 158 more threads
+2020-10-14 23:20:39,677 : INFO : worker thread finished; awaiting finish of 157 more threads
+2020-10-14 23:20:39,944 : INFO : worker thread finished; awaiting finish of 156 more threads
+2020-10-14 23:20:40,296 : INFO : worker thread finished; awaiting finish of 155 more threads
+2020-10-14 23:20:40,389 : INFO : worker thread finished; awaiting finish of 154 more threads
+2020-10-14 23:20:40,433 : INFO : worker thread finished; awaiting finish of 153 more threads
+2020-10-14 23:20:40,463 : INFO : worker thread finished; awaiting finish of 152 more threads
+2020-10-14 23:20:40,491 : INFO : EPOCH 4 - PROGRESS: at 5.13% examples, 37063 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:20:40,491 : INFO : worker thread finished; awaiting finish of 151 more threads
+2020-10-14 23:20:40,530 : INFO : worker thread finished; awaiting finish of 150 more threads
+2020-10-14 23:20:40,592 : INFO : worker thread finished; awaiting finish of 149 more threads
+2020-10-14 23:20:40,650 : INFO : worker thread finished; awaiting finish of 148 more threads
+2020-10-14 23:20:40,684 : INFO : worker thread finished; awaiting finish of 147 more threads
+2020-10-14 23:20:40,744 : INFO : worker thread finished; awaiting finish of 146 more threads
+2020-10-14 23:20:40,757 : INFO : worker thread finished; awaiting finish of 145 more threads
+2020-10-14 23:20:40,905 : INFO : worker thread finished; awaiting finish of 144 more threads
+2020-10-14 23:20:40,909 : INFO : worker thread finished; awaiting finish of 143 more threads
+2020-10-14 23:20:41,041 : INFO : worker thread finished; awaiting finish of 142 more threads
+2020-10-14 23:20:41,224 : INFO : worker thread finished; awaiting finish of 141 more threads
+2020-10-14 23:20:41,303 : INFO : worker thread finished; awaiting finish of 140 more threads
+2020-10-14 23:20:41,311 : INFO : worker thread finished; awaiting finish of 139 more threads
+2020-10-14 23:20:41,425 : INFO : worker thread finished; awaiting finish of 138 more threads
+2020-10-14 23:20:41,535 : INFO : EPOCH 4 - PROGRESS: at 14.01% examples, 101614 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:20:41,536 : INFO : worker thread finished; awaiting finish of 137 more threads
+2020-10-14 23:20:41,571 : INFO : worker thread finished; awaiting finish of 136 more threads
+2020-10-14 23:20:41,582 : INFO : worker thread finished; awaiting finish of 135 more threads
+2020-10-14 23:20:41,584 : INFO : worker thread finished; awaiting finish of 134 more threads
+2020-10-14 23:20:41,607 : INFO : worker thread finished; awaiting finish of 133 more threads
+2020-10-14 23:20:41,637 : INFO : worker thread finished; awaiting finish of 132 more threads
+2020-10-14 23:20:41,875 : INFO : worker thread finished; awaiting finish of 131 more threads
+2020-10-14 23:20:41,945 : INFO : worker thread finished; awaiting finish of 130 more threads
+2020-10-14 23:20:41,972 : INFO : worker thread finished; awaiting finish of 129 more threads
+2020-10-14 23:20:42,036 : INFO : worker thread finished; awaiting finish of 128 more threads
+2020-10-14 23:20:42,133 : INFO : worker thread finished; awaiting finish of 127 more threads
+2020-10-14 23:20:42,189 : INFO : worker thread finished; awaiting finish of 126 more threads
+2020-10-14 23:20:42,247 : INFO : worker thread finished; awaiting finish of 125 more threads
+2020-10-14 23:20:42,511 : INFO : worker thread finished; awaiting finish of 124 more threads
+2020-10-14 23:20:42,670 : INFO : EPOCH 4 - PROGRESS: at 22.49% examples, 165434 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:20:42,670 : INFO : worker thread finished; awaiting finish of 123 more threads
+2020-10-14 23:20:42,882 : INFO : worker thread finished; awaiting finish of 122 more threads
+2020-10-14 23:20:42,976 : INFO : worker thread finished; awaiting finish of 121 more threads
+2020-10-14 23:20:43,017 : INFO : worker thread finished; awaiting finish of 120 more threads
+2020-10-14 23:20:44,396 : INFO : EPOCH 4 - PROGRESS: at 24.82% examples, 182481 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:20:44,397 : INFO : worker thread finished; awaiting finish of 119 more threads
+2020-10-14 23:21:21,893 : INFO : EPOCH 4 - PROGRESS: at 25.56% examples, 161253 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:21:21,913 : INFO : worker thread finished; awaiting finish of 118 more threads
+2020-10-14 23:21:22,731 : INFO : worker thread finished; awaiting finish of 117 more threads
+2020-10-14 23:21:24,045 : INFO : EPOCH 4 - PROGRESS: at 26.95% examples, 167790 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:21:24,045 : INFO : worker thread finished; awaiting finish of 116 more threads
+2020-10-14 23:21:24,145 : INFO : worker thread finished; awaiting finish of 115 more threads
+2020-10-14 23:21:24,241 : INFO : worker thread finished; awaiting finish of 114 more threads
+2020-10-14 23:21:24,241 : INFO : worker thread finished; awaiting finish of 113 more threads
+2020-10-14 23:21:24,399 : INFO : worker thread finished; awaiting finish of 112 more threads
+2020-10-14 23:21:24,420 : INFO : worker thread finished; awaiting finish of 111 more threads
+2020-10-14 23:21:24,421 : INFO : worker thread finished; awaiting finish of 110 more threads
+2020-10-14 23:21:24,531 : INFO : worker thread finished; awaiting finish of 109 more threads
+2020-10-14 23:21:24,531 : INFO : worker thread finished; awaiting finish of 108 more threads
+2020-10-14 23:21:24,634 : INFO : worker thread finished; awaiting finish of 107 more threads
+2020-10-14 23:21:24,901 : INFO : worker thread finished; awaiting finish of 106 more threads
+2020-10-14 23:21:24,943 : INFO : worker thread finished; awaiting finish of 105 more threads
+2020-10-14 23:21:25,147 : INFO : EPOCH 4 - PROGRESS: at 35.18% examples, 213759 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:21:25,147 : INFO : worker thread finished; awaiting finish of 104 more threads
+2020-10-14 23:21:25,256 : INFO : worker thread finished; awaiting finish of 103 more threads
+2020-10-14 23:21:25,261 : INFO : worker thread finished; awaiting finish of 102 more threads
+2020-10-14 23:21:25,269 : INFO : worker thread finished; awaiting finish of 101 more threads
+2020-10-14 23:21:25,275 : INFO : worker thread finished; awaiting finish of 100 more threads
+2020-10-14 23:21:25,283 : INFO : worker thread finished; awaiting finish of 99 more threads
+2020-10-14 23:21:25,360 : INFO : worker thread finished; awaiting finish of 98 more threads
+2020-10-14 23:21:25,517 : INFO : worker thread finished; awaiting finish of 97 more threads
+2020-10-14 23:21:25,597 : INFO : worker thread finished; awaiting finish of 96 more threads
+2020-10-14 23:21:25,651 : INFO : worker thread finished; awaiting finish of 95 more threads
+2020-10-14 23:21:25,729 : INFO : worker thread finished; awaiting finish of 94 more threads
+2020-10-14 23:21:25,739 : INFO : worker thread finished; awaiting finish of 93 more threads
+2020-10-14 23:21:25,740 : INFO : worker thread finished; awaiting finish of 92 more threads
+2020-10-14 23:21:25,753 : INFO : worker thread finished; awaiting finish of 91 more threads
+2020-10-14 23:21:25,780 : INFO : worker thread finished; awaiting finish of 90 more threads
+2020-10-14 23:21:25,902 : INFO : worker thread finished; awaiting finish of 89 more threads
+2020-10-14 23:21:25,909 : INFO : worker thread finished; awaiting finish of 88 more threads
+2020-10-14 23:21:26,081 : INFO : worker thread finished; awaiting finish of 87 more threads
+2020-10-14 23:21:26,111 : INFO : worker thread finished; awaiting finish of 86 more threads
+2020-10-14 23:21:26,161 : INFO : EPOCH 4 - PROGRESS: at 47.91% examples, 286500 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:21:26,161 : INFO : worker thread finished; awaiting finish of 85 more threads
+2020-10-14 23:21:26,300 : INFO : worker thread finished; awaiting finish of 84 more threads
+2020-10-14 23:21:26,305 : INFO : worker thread finished; awaiting finish of 83 more threads
+2020-10-14 23:21:26,430 : INFO : worker thread finished; awaiting finish of 82 more threads
+2020-10-14 23:21:26,673 : INFO : worker thread finished; awaiting finish of 81 more threads
+2020-10-14 23:21:26,806 : INFO : worker thread finished; awaiting finish of 80 more threads
+2020-10-14 23:21:26,905 : INFO : worker thread finished; awaiting finish of 79 more threads
+2020-10-14 23:21:26,919 : INFO : worker thread finished; awaiting finish of 78 more threads
+2020-10-14 23:21:26,971 : INFO : worker thread finished; awaiting finish of 77 more threads
+2020-10-14 23:21:26,987 : INFO : worker thread finished; awaiting finish of 76 more threads
+2020-10-14 23:21:27,197 : INFO : EPOCH 4 - PROGRESS: at 54.36% examples, 324002 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:21:27,198 : INFO : worker thread finished; awaiting finish of 75 more threads
+2020-10-14 23:21:27,225 : INFO : worker thread finished; awaiting finish of 74 more threads
+2020-10-14 23:21:27,268 : INFO : worker thread finished; awaiting finish of 73 more threads
+2020-10-14 23:21:27,291 : INFO : worker thread finished; awaiting finish of 72 more threads
+2020-10-14 23:21:27,318 : INFO : worker thread finished; awaiting finish of 71 more threads
+2020-10-14 23:21:27,366 : INFO : worker thread finished; awaiting finish of 70 more threads
+2020-10-14 23:21:27,432 : INFO : worker thread finished; awaiting finish of 69 more threads
+2020-10-14 23:21:27,441 : INFO : worker thread finished; awaiting finish of 68 more threads
+2020-10-14 23:21:27,634 : INFO : worker thread finished; awaiting finish of 67 more threads
+2020-10-14 23:21:27,719 : INFO : worker thread finished; awaiting finish of 66 more threads
+2020-10-14 23:21:27,736 : INFO : worker thread finished; awaiting finish of 65 more threads
+2020-10-14 23:21:27,841 : INFO : worker thread finished; awaiting finish of 64 more threads
+2020-10-14 23:21:27,869 : INFO : worker thread finished; awaiting finish of 63 more threads
+2020-10-14 23:21:27,936 : INFO : worker thread finished; awaiting finish of 62 more threads
+2020-10-14 23:21:27,937 : INFO : worker thread finished; awaiting finish of 61 more threads
+2020-10-14 23:21:27,965 : INFO : worker thread finished; awaiting finish of 60 more threads
+2020-10-14 23:21:27,968 : INFO : worker thread finished; awaiting finish of 59 more threads
+2020-10-14 23:21:27,990 : INFO : worker thread finished; awaiting finish of 58 more threads
+2020-10-14 23:21:27,990 : INFO : worker thread finished; awaiting finish of 57 more threads
+2020-10-14 23:21:28,021 : INFO : worker thread finished; awaiting finish of 56 more threads
+2020-10-14 23:21:28,059 : INFO : worker thread finished; awaiting finish of 55 more threads
+2020-10-14 23:21:28,063 : INFO : worker thread finished; awaiting finish of 54 more threads
+2020-10-14 23:21:28,086 : INFO : worker thread finished; awaiting finish of 53 more threads
+2020-10-14 23:21:28,087 : INFO : worker thread finished; awaiting finish of 52 more threads
+2020-10-14 23:21:28,096 : INFO : worker thread finished; awaiting finish of 51 more threads
+2020-10-14 23:21:28,109 : INFO : worker thread finished; awaiting finish of 50 more threads
+2020-10-14 23:21:28,112 : INFO : worker thread finished; awaiting finish of 49 more threads
+2020-10-14 23:21:28,138 : INFO : worker thread finished; awaiting finish of 48 more threads
+2020-10-14 23:21:28,141 : INFO : worker thread finished; awaiting finish of 47 more threads
+2020-10-14 23:21:28,149 : INFO : worker thread finished; awaiting finish of 46 more threads
+2020-10-14 23:21:28,166 : INFO : worker thread finished; awaiting finish of 45 more threads
+2020-10-14 23:21:28,183 : INFO : worker thread finished; awaiting finish of 44 more threads
+2020-10-14 23:21:28,189 : INFO : worker thread finished; awaiting finish of 43 more threads
+2020-10-14 23:21:28,257 : INFO : EPOCH 4 - PROGRESS: at 75.10% examples, 449520 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:21:28,257 : INFO : worker thread finished; awaiting finish of 42 more threads
+2020-10-14 23:21:28,271 : INFO : worker thread finished; awaiting finish of 41 more threads
+2020-10-14 23:21:28,274 : INFO : worker thread finished; awaiting finish of 40 more threads
+2020-10-14 23:21:28,278 : INFO : worker thread finished; awaiting finish of 39 more threads
+2020-10-14 23:21:28,328 : INFO : worker thread finished; awaiting finish of 38 more threads
+2020-10-14 23:21:28,357 : INFO : worker thread finished; awaiting finish of 37 more threads
+2020-10-14 23:21:28,363 : INFO : worker thread finished; awaiting finish of 36 more threads
+2020-10-14 23:21:28,366 : INFO : worker thread finished; awaiting finish of 35 more threads
+2020-10-14 23:21:28,371 : INFO : worker thread finished; awaiting finish of 34 more threads
+2020-10-14 23:21:28,380 : INFO : worker thread finished; awaiting finish of 33 more threads
+2020-10-14 23:21:28,385 : INFO : worker thread finished; awaiting finish of 32 more threads
+2020-10-14 23:21:28,401 : INFO : worker thread finished; awaiting finish of 31 more threads
+2020-10-14 23:21:28,447 : INFO : worker thread finished; awaiting finish of 30 more threads
+2020-10-14 23:21:28,451 : INFO : worker thread finished; awaiting finish of 29 more threads
+2020-10-14 23:21:28,454 : INFO : worker thread finished; awaiting finish of 28 more threads
+2020-10-14 23:21:28,485 : INFO : worker thread finished; awaiting finish of 27 more threads
+2020-10-14 23:21:28,486 : INFO : worker thread finished; awaiting finish of 26 more threads
+2020-10-14 23:21:28,498 : INFO : worker thread finished; awaiting finish of 25 more threads
+2020-10-14 23:21:28,540 : INFO : worker thread finished; awaiting finish of 24 more threads
+2020-10-14 23:21:28,557 : INFO : worker thread finished; awaiting finish of 23 more threads
+2020-10-14 23:21:28,573 : INFO : worker thread finished; awaiting finish of 22 more threads
+2020-10-14 23:21:28,573 : INFO : worker thread finished; awaiting finish of 21 more threads
+2020-10-14 23:21:28,629 : INFO : worker thread finished; awaiting finish of 20 more threads
+2020-10-14 23:21:28,654 : INFO : worker thread finished; awaiting finish of 19 more threads
+2020-10-14 23:21:28,712 : INFO : worker thread finished; awaiting finish of 18 more threads
+2020-10-14 23:21:28,739 : INFO : worker thread finished; awaiting finish of 17 more threads
+2020-10-14 23:21:28,750 : INFO : worker thread finished; awaiting finish of 16 more threads
+2020-10-14 23:21:28,752 : INFO : worker thread finished; awaiting finish of 15 more threads
+2020-10-14 23:21:28,772 : INFO : worker thread finished; awaiting finish of 14 more threads
+2020-10-14 23:21:28,779 : INFO : worker thread finished; awaiting finish of 13 more threads
+2020-10-14 23:21:28,790 : INFO : worker thread finished; awaiting finish of 12 more threads
+2020-10-14 23:21:28,790 : INFO : worker thread finished; awaiting finish of 11 more threads
+2020-10-14 23:21:28,795 : INFO : worker thread finished; awaiting finish of 10 more threads
+2020-10-14 23:21:28,813 : INFO : worker thread finished; awaiting finish of 9 more threads
+2020-10-14 23:21:28,856 : INFO : worker thread finished; awaiting finish of 8 more threads
+2020-10-14 23:21:28,860 : INFO : worker thread finished; awaiting finish of 7 more threads
+2020-10-14 23:21:28,866 : INFO : worker thread finished; awaiting finish of 6 more threads
+2020-10-14 23:21:28,947 : INFO : worker thread finished; awaiting finish of 5 more threads
+2020-10-14 23:21:28,974 : INFO : worker thread finished; awaiting finish of 4 more threads
+2020-10-14 23:21:28,977 : INFO : worker thread finished; awaiting finish of 3 more threads
+2020-10-14 23:21:28,987 : INFO : worker thread finished; awaiting finish of 2 more threads
+2020-10-14 23:21:29,034 : INFO : worker thread finished; awaiting finish of 1 more threads
+2020-10-14 23:21:29,039 : INFO : worker thread finished; awaiting finish of 0 more threads
+2020-10-14 23:21:29,039 : INFO : EPOCH - 4 : training on 171182409 raw words (169940335 effective words) took 279.0s, 609174 effective words/s
+2020-10-14 23:21:29,042 : INFO : Epoch: 04 | Loss: 3,552.00
+2020-10-14 23:25:31,477 : INFO : EPOCH 5 - PROGRESS: at 0.82% examples, 4427 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:25:31,479 : INFO : worker thread finished; awaiting finish of 158 more threads
+2020-10-14 23:25:32,805 : INFO : EPOCH 5 - PROGRESS: at 1.55% examples, 8805 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:25:32,805 : INFO : worker thread finished; awaiting finish of 157 more threads
+2020-10-14 23:25:33,857 : INFO : EPOCH 5 - PROGRESS: at 2.21% examples, 13151 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:25:33,857 : INFO : worker thread finished; awaiting finish of 156 more threads
+2020-10-14 23:25:34,868 : INFO : EPOCH 5 - PROGRESS: at 2.88% examples, 17462 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:25:34,869 : INFO : worker thread finished; awaiting finish of 155 more threads
+2020-10-14 23:25:35,929 : INFO : EPOCH 5 - PROGRESS: at 3.55% examples, 21733 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:25:35,929 : INFO : worker thread finished; awaiting finish of 154 more threads
+2020-10-14 23:25:35,953 : INFO : worker thread finished; awaiting finish of 153 more threads
+2020-10-14 23:25:36,171 : INFO : worker thread finished; awaiting finish of 152 more threads
+2020-10-14 23:25:36,343 : INFO : worker thread finished; awaiting finish of 151 more threads
+2020-10-14 23:25:36,392 : INFO : worker thread finished; awaiting finish of 150 more threads
+2020-10-14 23:25:36,421 : INFO : worker thread finished; awaiting finish of 149 more threads
+2020-10-14 23:25:36,572 : INFO : worker thread finished; awaiting finish of 148 more threads
+2020-10-14 23:25:36,618 : INFO : worker thread finished; awaiting finish of 147 more threads
+2020-10-14 23:25:36,629 : INFO : worker thread finished; awaiting finish of 146 more threads
+2020-10-14 23:25:36,792 : INFO : worker thread finished; awaiting finish of 145 more threads
+2020-10-14 23:25:36,878 : INFO : worker thread finished; awaiting finish of 144 more threads
+2020-10-14 23:25:36,885 : INFO : worker thread finished; awaiting finish of 143 more threads
+2020-10-14 23:25:36,980 : INFO : EPOCH 5 - PROGRESS: at 11.62% examples, 73580 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:25:36,980 : INFO : worker thread finished; awaiting finish of 142 more threads
+2020-10-14 23:25:37,025 : INFO : worker thread finished; awaiting finish of 141 more threads
+2020-10-14 23:25:37,060 : INFO : worker thread finished; awaiting finish of 140 more threads
+2020-10-14 23:25:37,249 : INFO : worker thread finished; awaiting finish of 139 more threads
+2020-10-14 23:25:37,263 : INFO : worker thread finished; awaiting finish of 138 more threads
+2020-10-14 23:25:37,349 : INFO : worker thread finished; awaiting finish of 137 more threads
+2020-10-14 23:25:37,480 : INFO : worker thread finished; awaiting finish of 136 more threads
+2020-10-14 23:25:37,661 : INFO : worker thread finished; awaiting finish of 135 more threads
+2020-10-14 23:25:37,683 : INFO : worker thread finished; awaiting finish of 134 more threads
+2020-10-14 23:25:37,692 : INFO : worker thread finished; awaiting finish of 133 more threads
+2020-10-14 23:25:37,723 : INFO : worker thread finished; awaiting finish of 132 more threads
+2020-10-14 23:25:37,844 : INFO : worker thread finished; awaiting finish of 131 more threads
+2020-10-14 23:25:37,851 : INFO : worker thread finished; awaiting finish of 130 more threads
+2020-10-14 23:25:37,931 : INFO : worker thread finished; awaiting finish of 129 more threads
+2020-10-14 23:25:38,069 : INFO : EPOCH 5 - PROGRESS: at 20.84% examples, 133586 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:25:38,070 : INFO : worker thread finished; awaiting finish of 128 more threads
+2020-10-14 23:25:38,115 : INFO : worker thread finished; awaiting finish of 127 more threads
+2020-10-14 23:25:38,152 : INFO : worker thread finished; awaiting finish of 126 more threads
+2020-10-14 23:25:38,164 : INFO : worker thread finished; awaiting finish of 125 more threads
+2020-10-14 23:25:38,786 : INFO : worker thread finished; awaiting finish of 124 more threads
+2020-10-14 23:25:38,883 : INFO : worker thread finished; awaiting finish of 123 more threads
+2020-10-14 23:25:39,005 : INFO : worker thread finished; awaiting finish of 122 more threads
+2020-10-14 23:25:39,130 : INFO : EPOCH 5 - PROGRESS: at 25.20% examples, 163054 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:25:39,131 : INFO : worker thread finished; awaiting finish of 121 more threads
+2020-10-14 23:25:39,187 : INFO : worker thread finished; awaiting finish of 120 more threads
+2020-10-14 23:25:39,670 : INFO : worker thread finished; awaiting finish of 119 more threads
+2020-10-14 23:25:56,482 : INFO : EPOCH 5 - PROGRESS: at 27.19% examples, 164483 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:25:56,488 : INFO : worker thread finished; awaiting finish of 118 more threads
+2020-10-14 23:25:59,107 : INFO : EPOCH 5 - PROGRESS: at 27.92% examples, 166850 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:25:59,108 : INFO : worker thread finished; awaiting finish of 117 more threads
+2020-10-14 23:25:59,558 : INFO : worker thread finished; awaiting finish of 116 more threads
+2020-10-14 23:26:01,139 : INFO : EPOCH 5 - PROGRESS: at 29.31% examples, 173487 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:26:01,139 : INFO : worker thread finished; awaiting finish of 115 more threads
+2020-10-14 23:26:01,501 : INFO : worker thread finished; awaiting finish of 114 more threads
+2020-10-14 23:26:01,560 : INFO : worker thread finished; awaiting finish of 113 more threads
+2020-10-14 23:26:01,844 : INFO : worker thread finished; awaiting finish of 112 more threads
+2020-10-14 23:26:01,857 : INFO : worker thread finished; awaiting finish of 111 more threads
+2020-10-14 23:26:01,976 : INFO : worker thread finished; awaiting finish of 110 more threads
+2020-10-14 23:26:01,988 : INFO : worker thread finished; awaiting finish of 109 more threads
+2020-10-14 23:26:02,355 : INFO : EPOCH 5 - PROGRESS: at 33.45% examples, 200006 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:26:02,356 : INFO : worker thread finished; awaiting finish of 108 more threads
+2020-10-14 23:26:02,374 : INFO : worker thread finished; awaiting finish of 107 more threads
+2020-10-14 23:26:02,431 : INFO : worker thread finished; awaiting finish of 106 more threads
+2020-10-14 23:26:02,441 : INFO : worker thread finished; awaiting finish of 105 more threads
+2020-10-14 23:26:02,848 : INFO : worker thread finished; awaiting finish of 104 more threads
+2020-10-14 23:26:02,865 : INFO : worker thread finished; awaiting finish of 103 more threads
+2020-10-14 23:26:02,910 : INFO : worker thread finished; awaiting finish of 102 more threads
+2020-10-14 23:26:03,023 : INFO : worker thread finished; awaiting finish of 101 more threads
+2020-10-14 23:26:03,068 : INFO : worker thread finished; awaiting finish of 100 more threads
+2020-10-14 23:26:03,127 : INFO : worker thread finished; awaiting finish of 99 more threads
+2020-10-14 23:26:03,176 : INFO : worker thread finished; awaiting finish of 98 more threads
+2020-10-14 23:26:03,235 : INFO : worker thread finished; awaiting finish of 97 more threads
+2020-10-14 23:26:03,433 : INFO : EPOCH 5 - PROGRESS: at 40.81% examples, 246100 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:26:03,434 : INFO : worker thread finished; awaiting finish of 96 more threads
+2020-10-14 23:26:03,508 : INFO : worker thread finished; awaiting finish of 95 more threads
+2020-10-14 23:26:03,547 : INFO : worker thread finished; awaiting finish of 94 more threads
+2020-10-14 23:26:03,582 : INFO : worker thread finished; awaiting finish of 93 more threads
+2020-10-14 23:26:03,644 : INFO : worker thread finished; awaiting finish of 92 more threads
+2020-10-14 23:26:03,717 : INFO : worker thread finished; awaiting finish of 91 more threads
+2020-10-14 23:26:03,860 : INFO : worker thread finished; awaiting finish of 90 more threads
+2020-10-14 23:26:03,917 : INFO : worker thread finished; awaiting finish of 89 more threads
+2020-10-14 23:26:04,096 : INFO : worker thread finished; awaiting finish of 88 more threads
+2020-10-14 23:26:04,197 : INFO : worker thread finished; awaiting finish of 87 more threads
+2020-10-14 23:26:04,217 : INFO : worker thread finished; awaiting finish of 86 more threads
+2020-10-14 23:26:04,634 : INFO : EPOCH 5 - PROGRESS: at 47.10% examples, 287808 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:26:04,635 : INFO : worker thread finished; awaiting finish of 85 more threads
+2020-10-14 23:26:04,706 : INFO : worker thread finished; awaiting finish of 84 more threads
+2020-10-14 23:26:04,759 : INFO : worker thread finished; awaiting finish of 83 more threads
+2020-10-14 23:26:05,492 : INFO : worker thread finished; awaiting finish of 82 more threads
+2020-10-14 23:26:05,825 : INFO : EPOCH 5 - PROGRESS: at 49.37% examples, 302071 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:26:05,825 : INFO : worker thread finished; awaiting finish of 81 more threads
+2020-10-14 23:26:05,873 : INFO : worker thread finished; awaiting finish of 80 more threads
+2020-10-14 23:26:09,024 : INFO : EPOCH 5 - PROGRESS: at 50.47% examples, 306238 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:26:09,025 : INFO : worker thread finished; awaiting finish of 79 more threads
+2020-10-14 23:26:09,927 : INFO : worker thread finished; awaiting finish of 78 more threads
+2020-10-14 23:26:12,366 : INFO : EPOCH 5 - PROGRESS: at 51.97% examples, 310188 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:26:12,367 : INFO : worker thread finished; awaiting finish of 77 more threads
+2020-10-14 23:26:12,929 : INFO : worker thread finished; awaiting finish of 76 more threads
+2020-10-14 23:26:12,980 : INFO : worker thread finished; awaiting finish of 75 more threads
+2020-10-14 23:26:13,089 : INFO : worker thread finished; awaiting finish of 74 more threads
+2020-10-14 23:26:13,205 : INFO : worker thread finished; awaiting finish of 73 more threads
+2020-10-14 23:26:13,244 : INFO : worker thread finished; awaiting finish of 72 more threads
+2020-10-14 23:26:13,435 : INFO : EPOCH 5 - PROGRESS: at 56.12% examples, 331617 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:26:13,435 : INFO : worker thread finished; awaiting finish of 71 more threads
+2020-10-14 23:26:13,482 : INFO : worker thread finished; awaiting finish of 70 more threads
+2020-10-14 23:26:13,533 : INFO : worker thread finished; awaiting finish of 69 more threads
+2020-10-14 23:26:13,794 : INFO : worker thread finished; awaiting finish of 68 more threads
+2020-10-14 23:26:13,826 : INFO : worker thread finished; awaiting finish of 67 more threads
+2020-10-14 23:26:13,866 : INFO : worker thread finished; awaiting finish of 66 more threads
+2020-10-14 23:26:13,899 : INFO : worker thread finished; awaiting finish of 65 more threads
+2020-10-14 23:26:14,108 : INFO : worker thread finished; awaiting finish of 64 more threads
+2020-10-14 23:26:14,160 : INFO : worker thread finished; awaiting finish of 63 more threads
+2020-10-14 23:26:14,170 : INFO : worker thread finished; awaiting finish of 62 more threads
+2020-10-14 23:26:14,219 : INFO : worker thread finished; awaiting finish of 61 more threads
+2020-10-14 23:26:14,250 : INFO : worker thread finished; awaiting finish of 60 more threads
+2020-10-14 23:26:14,264 : INFO : worker thread finished; awaiting finish of 59 more threads
+2020-10-14 23:26:14,280 : INFO : worker thread finished; awaiting finish of 58 more threads
+2020-10-14 23:26:14,368 : INFO : worker thread finished; awaiting finish of 57 more threads
+2020-10-14 23:26:14,379 : INFO : worker thread finished; awaiting finish of 56 more threads
+2020-10-14 23:26:14,414 : INFO : worker thread finished; awaiting finish of 55 more threads
+2020-10-14 23:26:14,435 : INFO : EPOCH 5 - PROGRESS: at 67.18% examples, 394176 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:26:14,435 : INFO : worker thread finished; awaiting finish of 54 more threads
+2020-10-14 23:26:14,529 : INFO : worker thread finished; awaiting finish of 53 more threads
+2020-10-14 23:26:14,602 : INFO : worker thread finished; awaiting finish of 52 more threads
+2020-10-14 23:26:14,654 : INFO : worker thread finished; awaiting finish of 51 more threads
+2020-10-14 23:26:14,665 : INFO : worker thread finished; awaiting finish of 50 more threads
+2020-10-14 23:26:14,732 : INFO : worker thread finished; awaiting finish of 49 more threads
+2020-10-14 23:26:14,773 : INFO : worker thread finished; awaiting finish of 48 more threads
+2020-10-14 23:26:14,788 : INFO : worker thread finished; awaiting finish of 47 more threads
+2020-10-14 23:26:14,799 : INFO : worker thread finished; awaiting finish of 46 more threads
+2020-10-14 23:26:14,835 : INFO : worker thread finished; awaiting finish of 45 more threads
+2020-10-14 23:26:14,839 : INFO : worker thread finished; awaiting finish of 44 more threads
+2020-10-14 23:26:14,846 : INFO : worker thread finished; awaiting finish of 43 more threads
+2020-10-14 23:26:14,859 : INFO : worker thread finished; awaiting finish of 42 more threads
+2020-10-14 23:26:14,901 : INFO : worker thread finished; awaiting finish of 41 more threads
+2020-10-14 23:26:14,992 : INFO : worker thread finished; awaiting finish of 40 more threads
+2020-10-14 23:26:15,025 : INFO : worker thread finished; awaiting finish of 39 more threads
+2020-10-14 23:26:15,052 : INFO : worker thread finished; awaiting finish of 38 more threads
+2020-10-14 23:26:15,056 : INFO : worker thread finished; awaiting finish of 37 more threads
+2020-10-14 23:26:15,071 : INFO : worker thread finished; awaiting finish of 36 more threads
+2020-10-14 23:26:15,156 : INFO : worker thread finished; awaiting finish of 35 more threads
+2020-10-14 23:26:15,212 : INFO : worker thread finished; awaiting finish of 34 more threads
+2020-10-14 23:26:15,312 : INFO : worker thread finished; awaiting finish of 33 more threads
+2020-10-14 23:26:15,340 : INFO : worker thread finished; awaiting finish of 32 more threads
+2020-10-14 23:26:15,403 : INFO : worker thread finished; awaiting finish of 31 more threads
+2020-10-14 23:26:15,451 : INFO : EPOCH 5 - PROGRESS: at 82.02% examples, 482558 words/s, in_qsize -1, out_qsize 1
+2020-10-14 23:26:15,451 : INFO : worker thread finished; awaiting finish of 30 more threads
+2020-10-14 23:26:15,482 : INFO : worker thread finished; awaiting finish of 29 more threads
+2020-10-14 23:26:15,484 : INFO : worker thread finished; awaiting finish of 28 more threads
+2020-10-14 23:26:15,491 : INFO : worker thread finished; awaiting finish of 27 more threads
+2020-10-14 23:26:15,516 : INFO : worker thread finished; awaiting finish of 26 more threads
+2020-10-14 23:26:15,531 : INFO : worker thread finished; awaiting finish of 25 more threads
+2020-10-14 23:26:15,543 : INFO : worker thread finished; awaiting finish of 24 more threads
+2020-10-14 23:26:15,604 : INFO : worker thread finished; awaiting finish of 23 more threads
+2020-10-14 23:26:15,635 : INFO : worker thread finished; awaiting finish of 22 more threads
+2020-10-14 23:26:15,648 : INFO : worker thread finished; awaiting finish of 21 more threads
+2020-10-14 23:26:15,651 : INFO : worker thread finished; awaiting finish of 20 more threads
+2020-10-14 23:26:15,657 : INFO : worker thread finished; awaiting finish of 19 more threads
+2020-10-14 23:26:15,681 : INFO : worker thread finished; awaiting finish of 18 more threads
+2020-10-14 23:26:15,695 : INFO : worker thread finished; awaiting finish of 17 more threads
+2020-10-14 23:26:15,705 : INFO : worker thread finished; awaiting finish of 16 more threads
+2020-10-14 23:26:15,722 : INFO : worker thread finished; awaiting finish of 15 more threads
+2020-10-14 23:26:15,740 : INFO : worker thread finished; awaiting finish of 14 more threads
+2020-10-14 23:26:15,760 : INFO : worker thread finished; awaiting finish of 13 more threads
+2020-10-14 23:26:15,785 : INFO : worker thread finished; awaiting finish of 12 more threads
+2020-10-14 23:26:15,805 : INFO : worker thread finished; awaiting finish of 11 more threads
+2020-10-14 23:26:15,812 : INFO : worker thread finished; awaiting finish of 10 more threads
+2020-10-14 23:26:15,836 : INFO : worker thread finished; awaiting finish of 9 more threads
+2020-10-14 23:26:15,857 : INFO : worker thread finished; awaiting finish of 8 more threads
+2020-10-14 23:26:15,881 : INFO : worker thread finished; awaiting finish of 7 more threads
+2020-10-14 23:26:15,968 : INFO : worker thread finished; awaiting finish of 6 more threads
+2020-10-14 23:26:15,969 : INFO : worker thread finished; awaiting finish of 5 more threads
+2020-10-14 23:26:15,986 : INFO : worker thread finished; awaiting finish of 4 more threads
+2020-10-14 23:26:16,046 : INFO : worker thread finished; awaiting finish of 3 more threads
+2020-10-14 23:26:16,177 : INFO : worker thread finished; awaiting finish of 2 more threads
+2020-10-14 23:26:16,196 : INFO : worker thread finished; awaiting finish of 1 more threads
+2020-10-14 23:26:16,234 : INFO : worker thread finished; awaiting finish of 0 more threads
+2020-10-14 23:26:16,234 : INFO : EPOCH - 5 : training on 171182409 raw words (169940335 effective words) took 286.5s, 593223 effective words/s
+2020-10-14 23:26:16,237 : INFO : Epoch: 05 | Loss: 3,400.00
+2020-10-14 23:26:16,237 : INFO : training on a 855912045 raw words (849701675 effective words) took 1467.4s, 579064 effective words/s
+2020-10-14 23:26:16,237 : WARNING : under 10 jobs per worker: consider setting a smaller `batch_words' for smoother alpha decay
+2020-10-14 23:26:16,238 : INFO : saving Word2Vec object under outputs/protvec.mdl, separately None
+2020-10-14 23:26:16,238 : INFO : not storing attribute vectors_norm
+2020-10-14 23:26:16,239 : INFO : not storing attribute cum_table
+2020-10-14 23:26:16,425 : INFO : saved outputs/protvec.mdl

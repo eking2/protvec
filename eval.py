@@ -61,6 +61,13 @@ def tsne_plots(output='./outputs/tsne_plots.png'):
         cbar.solids.set(alpha = 1)  # colorbar no transparency
         plt.title(names[prop])
 
+    # share axis labels
+    fig.add_subplot(111, frameon=False)
+    plt.tick_params(labelcolor='none', top=False, bottom=False, left=False, right=False)
+    plt.grid(False)
+    plt.xlabel('tSNE 1')
+    plt.ylabel('tSNE 2')
+
     plt.tight_layout()
     plt.savefig(output, bbox_inches='tight', dpi=300)
 
